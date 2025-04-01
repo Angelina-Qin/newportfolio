@@ -1,4 +1,6 @@
-// https://astro.build/config
+site: 'https://angelina-qin.github.io',
+base: '/newportfolio',site: 'https://angelina-qin.github.io',
+base: '/newportfolio'// https://astro.build/config
 import { defineConfig } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
@@ -25,7 +27,8 @@ export default defineConfig({
     wrap: true,
     }
   },
-  site: 'https://blog-template.606design.art/',
+  site: 'https://angelina-qin.github.io',
+  base: '/newportfolio',
   integrations: [sitemap()],
   css: {
     preprocessorOptions: {
