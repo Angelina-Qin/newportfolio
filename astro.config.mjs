@@ -1,8 +1,5 @@
-site: 'https://angelina-qin.github.io',
-base: '/newportfolio',site: 'https://angelina-qin.github.io',
-base: '/newportfolio'// https://astro.build/config
-import { defineConfig } from 'astro/config';
 
+import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
@@ -23,7 +20,6 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
     theme: "github-dark",
-
     wrap: true,
     }
   },
@@ -37,4 +33,4 @@ export default defineConfig({
       },
     },
   },
-})
+});
