@@ -1,0 +1,550 @@
+---
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+
+---
+
+<DetailPostLayout
+  title="Agora"
+  description="A remote peer support service for university students on study topics and student life."
+  keywords="remote learning support,peer tutoring,online education platform,student support network,university peer help"
+>
+  <div class="post">
+    <main class="post-wrapper">
+      <DetailHeader
+        tag="UX DESIGN"
+        description="Oct - Dec 2020">
+        <h1 class="font-type">
+          Agora
+        </h1>
+      </DetailHeader>
+
+      <section class="agora-content">
+        <!-- Hero image with visual enhancement -->
+        <div class="hero-container">
+          <div class="hero-image-wrapper">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63d2895db64bcc13414173ec_0.0-login%20(1).png" alt="Agora platform login interface" class="hero-image" />
+          </div>
+        </div>
+
+
+          <!-- Project overview with enhanced styling -->
+          <div class="overview-section">
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <h2>Project overview</h2>
+            </div>
+            <div class="section-content">
+              <p>Our team was asked to design a web service for offering remote peer support for university students on specific study topics or topics related to student life. The service should support connecting people who need or can offer peer support on specific topics and the service should offer features for the peer support activities. We followed a process of researching, ideating, designing, and iterating to develop this product.</p>
+            </div>
+          </div>
+          
+          
+          <!-- Research section with enhanced styling -->
+          <div class="research-section">
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <h2>Research & Analysis</h2>
+            </div>
+            
+            <div class="research-goals">
+              <h3 class="subsection-heading">Research goals</h3>
+              <div class="goals-list">
+                <div class="goal-item">
+                  <span class="goal-number">Q1</span>
+                  <p>What's the dynamic and interaction between a person that asks for help and a person that offers help?</p>
+                </div>
+                <div class="goal-item">
+                  <span class="goal-number">Q2</span>
+                  <p>What are the current services they use?</p>
+                </div>
+                <div class="goal-item">
+                  <span class="goal-number">Q3</span>
+                  <p>What are the needs, motivations, and challenges when they ask and request help?</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="research-method">
+              <h3 class="subsection-heading">Research method - in depth interview</h3>
+              <p>
+                We interviewed 2 Bachelor students, 2 Master's students, and 2 Doctorate students from 3 different countries. We wanted to know if there are different needs depending on the level of the studies and their backgrounds.
+              </p>
+              <p>
+                We constructed our interview questions based on different themes and it all starts with the basic question of "Have you needed any help related to your studies?". In this way, we hoped to understand their interaction when searching for peer support, needs, and challenges.
+              </p>
+            </div>
+            
+            <div class="data-analysis">
+              <h3 class="subsection-heading">Data analysis</h3>
+              <div class="analysis-container">
+                <div class="analysis-text">
+                  <p>The data analysis process we chose is content analysis. Content analysis is a method that uses qualitative data to find patterns or categories between users.</p>
+                </div>
+                <div class="analysis-image">
+                  <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba0e40bff1d51f384c924_Group%2080%20(1).png" alt="Data analysis process" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Insight section -->
+          <div class="insight-section">
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <h2>Insight</h2>
+            </div>
+            <div class="insight-content">
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2682581868b565136c6_Bracket%20Template%20(Community).png" alt="Project insights" class="full-width-image" />
+            </div>
+          </div>
+          
+          <!-- User groups section -->
+          <div class="user-groups-section">
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <h2>User groups</h2>
+            </div>
+            <div class="user-groups-content">
+              <p>
+                We have defined two user groups of the system. The main user group will be named help-seekers and the second user group is named experts. This result is based on the results from the interviews that for the system to work there needs to be two types of interaction. One for people seeking help, and one for people that are willing to help others.
+              </p>
+              <div class="user-groups-highlight">
+                <p>
+                  This is an interesting dilemma such as "The chicken or the egg". Which one comes first? Using the results from the interview we theorized that before there is someone offering help, there needs to be someone asking for help. Therefore, our main user group is the help-seekers.
+                </p>
+              </div>
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2f561a25e7b261988b3_Design-37.jpg" alt="User groups analysis" class="full-width-image" />
+            </div>
+          </div>
+          
+          <!-- Personas section -->
+          <div class="personas-section">
+            <div class="section-heading">
+              <span class="section-number">05</span>
+              <h2>Personas</h2>
+            </div>
+            <div class="personas-content">
+              <p class="personas-intro">
+                Based on the results of interviews conducted earlier and the two user groups we defined for the system we have created two personas. One is the <strong>Help-seeker</strong> and the other one is <strong>Expert</strong>. Help-seeker is new to the university community which means they need help regarding all kinds of school issues from enrolling to courses to making new friends to get adapted into new environment. Experts are people who have experiences and are familiar with how things work in university. They could provide precious advises for help-seekers.
+              </p>
+              <div class="personas-cards">
+                <div class="persona-card">
+                  <div class="persona-card-header">
+                    <span class="persona-type">Help-seeker</span>
+                  </div>
+                  <div class="persona-card-body">
+                    <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba3613969af07ac74ebd3_Group%2078.png" alt="Help-seeker persona" class="persona-image" />
+                  </div>
+                </div>
+                <div class="persona-card">
+                  <div class="persona-card-header">
+                    <span class="persona-type">Expert</span>
+                  </div>
+                  <div class="persona-card-body">
+                    <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba372e8a2c6fa241d240b_Group%2077.png" alt="Expert persona" class="persona-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Our goals section -->
+          <div class="goals-section">
+            <div class="section-heading">
+              <span class="section-number">06</span>
+              <h2>Our goals</h2>
+            </div>
+            <div class="goals-content">
+              <div class="goals-cards">
+                <div class="goals-card">
+                  <h4>Usability goals</h4>
+                  <ul>
+                    <li>Efficiency</li>
+                    <li>Utility</li>
+                    <li>Learnability</li>
+                  </ul>
+                </div>
+                <div class="goals-card">
+                  <h4>User experience goals</h4>
+                  <ul>
+                    <li>Competence</li>
+                    <li>Safety</li>
+                    <li>Popularity - influence</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Conceptual model section -->
+          <div class="conceptual-model-section">
+            <div class="section-heading">
+              <span class="section-number">07</span>
+              <h2>Conceptual model</h2>
+            </div>
+            <div class="conceptual-model-content">
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba14acd4604aaa65e06e6_Blank%20diagram.png" alt="Conceptual model diagram" class="full-width-image" />
+            </div>
+          </div>
+          
+          <!-- Design section -->
+          <div class="design-section">
+            <div class="section-heading">
+              <span class="section-number">08</span>
+              <h2>Design</h2>
+            </div>
+            
+            <!-- Sitemap subsection -->
+            <div class="design-subsection">
+              <h3 class="subsection-heading">Sitemap</h3>
+              <div class="design-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cd0b1ee9e1142e11f34c_sitemap.png" alt="Site map" class="full-width-image" />
+              </div>
+            </div>
+            
+            <!-- Wireframe subsection -->
+            <div class="design-subsection">
+              <h3 class="subsection-heading">Wireframe</h3>
+              <div class="design-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e1fdbf9622904f229f01fd_Group%2033%20(1).png" alt="Wireframes" class="full-width-image" />
+              </div>
+            </div>
+            
+            <!-- Style guide subsection -->
+            <div class="design-subsection">
+              <h3 class="subsection-heading">Style guide</h3>
+              <div class="accessibility-text">
+                <div class="accessibility-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0z"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
+                </div>
+                <div class="accessibility-content">
+                  <p>
+                    <strong>Accessibility</strong> was considered during the design process by making sure that the colors in the system are colorblind-friendly and provide enough contrast.
+                  </p>
+                  <p>
+                    Our goal was to make all the colors match the highest AAA standard of the accessibility of contrast. To ensure these were met, we used two Figma plugins to check: Colorblind and A11y - Color Contrast Checker.
+                  </p>
+                </div>
+              </div>
+              <div class="design-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e1fec781523f63b8e5ae37_style%20guide.png" alt="Style guide" class="full-width-image" />
+              </div>
+            </div>
+            
+            <!-- Solution subsection -->
+            <div class="design-subsection">
+              <h3 class="subsection-heading">Solution</h3>
+              <div class="design-image-container solution-images">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cc44e4036d68161e20a2_Group%20211%20(1).png" alt="Final solution mockups" class="full-width-image" />
+              </div>
+            </div>
+          </div>
+     
+      </section>
+    </main>
+  </div>
+</DetailPostLayout>
+
+<style>
+
+  /* Hero section styles */
+  .hero-container {
+    margin-bottom: 4rem;
+  }
+  
+  .hero-image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 550px; /* 可以根据需要调整这个值 */
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* 确保图片填满容器 */
+  }
+  
+  
+  /* Section heading styles */
+  .section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    padding-bottom: 1rem;
+  }
+  
+  .section-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-right: 1rem;
+    opacity: 0.8;
+  }
+  
+  .section-heading h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--color-text);
+  }
+  
+  /* Subsection heading styles */
+  .subsection-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+  }
+  
+  /* Info cards styles */
+  .info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0 4rem;
+  }
+  
+  .info-card {
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  
+  .card-icon {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+  }
+  
+  .info-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .info-card p {
+    margin: 0;
+  }
+  
+  /* Research goals styles */
+  .research-goals {
+    margin-bottom: 3rem;
+  }
+  
+  .goals-list {
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  .goal-item {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .goal-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .goal-number {
+    font-weight: bold;
+    margin-right: 1rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  
+  .goal-item p {
+    margin: 0;
+  }
+  
+  /* Research method styles */
+  .research-method {
+    margin-bottom: 3rem;
+  }
+  
+  /* Data analysis styles */
+  .analysis-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  /* User groups highlight */
+  .user-groups-highlight {
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-left: 3px solid var(--color-accent);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .user-groups-highlight p {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  /* Personas styles */
+  .personas-intro {
+    margin-bottom: 2rem;
+  }
+  
+  .personas-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .persona-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  
+  .persona-card-header {
+    background-color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  
+  .persona-type {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .persona-card-body {
+    padding: 1rem;
+  }
+  
+  .persona-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Goals section styles */
+  .goals-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .goals-card {
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  .goals-card h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+  }
+  
+  .goals-card ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .goals-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Design section styles */
+  .design-subsection {
+    margin-bottom: 4rem;
+  }
+  
+  .design-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  /* Accessibility text styles */
+  .accessibility-text {
+    display: flex;
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  .accessibility-icon {
+    margin-right: 1.5rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  
+  .accessibility-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image styles */
+  .full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Spacing between sections */
+  .overview-section,
+  .research-section,
+  .insight-section,
+  .user-groups-section,
+  .personas-section,
+  .goals-section,
+  .conceptual-model-section,
+  .design-section {
+    margin-top: 5rem;
+  }
+  
+  
+  /* Content spacing */
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .info-cards,
+    .personas-cards,
+    .goals-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .analysis-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-heading {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .section-number {
+      margin-bottom: 0.5rem;
+    }
+    
+    .accessibility-text {
+      flex-direction: column;
+    }
+    
+    .accessibility-icon {
+      margin-bottom: 1rem;
+    }
+  }
+</style>

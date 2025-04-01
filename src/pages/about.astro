@@ -24,62 +24,51 @@ import myPortrait from "../assets/portrait.jpg";
 				</svg>
 			</SectionHeader>
 			<section class="border-top" style="padding-top: 2rem;">
+				
 				<div class="content">
-					<div>
-						<Image src={myPortrait} alt="portrait" width="88" height="88" class="portrait">
+					<div class="about">
+						<Image src={myPortrait} alt="portrait" class="portrait">
 					</div>
 					<p>
-						我是 <strong style="font-size:1.2em">陈熙</strong>， 一名设计师和创意开发者，专注于网页视觉的技术实现，以及探索视觉上的奇思妙想。
+						I am <strong style="font-size:1.2em">Moshi Qin</strong>, a UX researcher and designer passionate about creating intuitive and human-centered digital experiences. With a background in Human-Technology Interaction and a strong foundation in user research, I specialize in improving usability, accessibility, and engagement across digital platforms. From game design to cognitive load analysis, I love exploring how technology can better serve people. 
 					</p>
 					<p>
-						目前我在积极的创作一些作品，做有趣和创意性的东西，这时候，我觉得工作中最快乐。
+						Outside of work, you’ll probably find me baking something sweet, sipping a good cup of coffee, solving puzzles, or escaping from a themed room (hopefully successfully). I also love just sitting under the sun, soaking in the moment.
 					</p>
 
 				</div>
 			</section>
-			<section>
-				<h3 class="post-title">工作之外</h3>
-				<div class="content">
-					<p>
-						除了日常工作之外，我喜欢将部分空闲时间投入到各种项目中，比如为我的个人网站添加功能，研究设计和编程，探索各种视觉技术实现的可能性。此外，我喜欢咖啡，是一个浅薄的美式爱好者，喜欢尝试各种咖啡豆的奇妙风味，以及研究一些奇奇怪怪的意式浓缩咖啡配方..。
-					</p>
-					<p>或者，有空我可以请你喝上一杯我自己的调配的咖啡...</p>
-					<p style="margin-top:24px;">
-						<CallToAction
-						target="_self"
-						href="mailto:hello@606design.art"
-						>
-							联系我
-						</CallToAction>
-					</p>
-				</div>
-			</section>
 			<p></p>
 			<p></p>
+			
 		</main>
 	</div>
 </BlogPostLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		margin:0 auto;
-	}
-	p{
-		margin:0.75rem 0;
-	}
-	figure{
-		margin:2rem 0;
-	}
-	img{max-width: 100%;}
-	.portrait{
-		border-radius: 100px;
-		margin:12px 0 12px;
-		overflow: hidden;
-		text-align: left;
-	}
-	a, a:link{
-		color:var(--color-blue);
-	}
+
+	
+	    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .portrait {
+        border-radius: 50%;
+        width: 350px;  /* 增大头像 */
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 4rem; /* 增加头像和文字之间的间距 */
+    }
+
+    .content {
+        text-align: left;
+        line-height: 1.8;
+    }
+
+
 </style>

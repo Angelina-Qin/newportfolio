@@ -1,0 +1,329 @@
+---
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+---
+
+<DetailPostLayout
+  title="Manse"
+  description="Feedback BOT Manse is an AI-infused service for citizens to report distractions/disturbances to the city"
+  keywords="feedback bot,city services,citizen reports,urban feedback,AI service"
+>
+  <div class="post">
+    <main class="post-wrapper">
+      <DetailHeader
+        tag="UX PROJECT"
+        description="Jan-April 2021">
+        <h1 class="font-type">
+          Manse
+        </h1>
+      </DetailHeader>
+
+      <section class="project-content">
+        <!-- Project Introduction -->
+        <div class="intro-section">
+          <div class="intro-content">
+            <h2 class="section-title">Project Introduction</h2>
+            <p class="intro-text">
+              <strong>Feedback BOT Manse</strong> is an AI-infused service for citizens to report distractions/ disturbances (e.g. street light is out, icy parts on the sidewalk, missing STOP-sign in an intersection, etc.), give feedback or suggestions to the city. Users can easily make different kinds of reports through the service, give the exact location to the reports, receive replies for the report/messages, and check the status of the reports.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Details - Without Cards -->
+        <div class="details-section">
+          <div class="detail-section">
+            <h3 class="detail-title">My Role</h3>
+            <p class="detail-text">I was responsible for conducting user researches, analyzing results, ideation, making wireframes, hi-fi prototypes for mobile, and validations.</p>
+          </div>
+          
+          <div class="detail-section">
+            <h3 class="detail-title">Problem</h3>
+            <p class="detail-text">There are things that citizens would like to communicate or report to the city, but not everyone is aware of the ways to do this, and often people just won't do it (even if it was something important) because there is no convenient or quick way to do it. That's why we present Feedback BOT Manse.</p>
+          </div>
+          
+          <div class="detail-section">
+            <h3 class="detail-title">Questions</h3>
+            <p class="detail-text">How would you interact with the bot in a convenient and accessible way? What kind of system would be easy enough to use so that it would be accessible and easy to use for all the citizens, and for the receiving party (the city)?</p>
+          </div>
+        </div>
+
+        <!-- Design Journey Video -->
+        <div class="content-section">
+          <h2 class="section-title">Design Journey Video</h2>
+          <p class="section-description">We made a video that covers all the processes we have done for this object. You will also see our interactive prototype at the end.</p>
+          <div class="video-container">
+            <div style="padding-top:56.17021276595745%" class="video-wrapper">
+              <iframe class="video-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F540353980%3Fh%3D808e7efeb7%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F540353980&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1118544478-fe27342b6375171b36fb90cd6b02164a9e982490fdbde02f29944e1e996edafe-d_640&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo" scrolling="no" title="Feedback Bot Manse"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Methods Section -->
+        <div class="content-section">
+          <h2 class="section-title">Methods</h2>
+          <p class="section-description">It was a 4 months project that was filled with mostly analysis and research. We followed the Double Diamond Process as a guide. In order to understand stakeholders and end-users, we did stakeholder analysis, semi-structured interviews, affinity diagram, value proposition canvas, user journey, and storyboard.</p>
+          
+          <div class="methods-gallery">
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d68651c920084e8d166b_User_Journey.png" alt="User's Journey Map" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">User's Journey Map</div>
+            </div>
+            
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216977b4a0a40bf6ea56e_Screen_Shot_2021-02-26_at_13.16.37.png" alt="The Value Proposition Canvas" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">The Value Proposition Canvas</div>
+            </div>
+            
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d69adc72a16fe101c768_Untitled%20(2).png" alt="Affinity Diagram" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">Affinity Diagram</div>
+            </div>
+            
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216c3aa22cef8994c79f0_doublediamondprocess.png" alt="Double Diamond Process" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">Double Diamond Process</div>
+            </div>
+            
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216d3f4a5e1b66c76099f_Screen_Shot_2021-02-20_at_1.04.35_PM.png" alt="Ideation" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">Ideation</div>
+            </div>
+            
+            <div class="gallery-item">
+              <div class="gallery-image-container">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216abfd2fc4828dd61efb_Screen_Shot_2021-02-04_at_11.28.01_AM.png" alt="Power/Interest Grid for Stakeholder Prioritization" class="gallery-image" />
+              </div>
+              <div class="gallery-caption">Power/Interest Grid for Stakeholder Prioritization</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion Section -->
+        <div class="content-section">
+          <h2 class="section-title">Conclusion</h2>
+          <div class="conclusion-content">
+            <p class="section-description">
+              It was a very valuable experience and a meaningful project. I got the opportunity to try out all the different methods, learned many new things through the researches, and got to know how the feedback system of Tampere works.
+            </p>
+            <p class="section-description">
+              We have also documented everything in detail as a learning diary and here is the link to it. Feel free to check it out!
+            </p>
+            <a href="https://luu.notion.site/Project-Diary-ae0eb7ea0a9742de898cabb3de8242ee?pvs=4" target="_blank" class="report-link">
+              View Learning Diary
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DetailPostLayout>
+
+<style>
+  /* Project Content Container */
+  .project-content {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Section Title Styling */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    color: var(--color-text);
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-accent);
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 85ch;
+  }
+  
+  /* Introduction Section */
+  .intro-section {
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 3rem;
+    margin: 2rem 0 3rem;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    max-width: 75ch;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    margin: 5rem 0;
+  }
+  
+  /* Details Section - Removed Card Styling */
+  .details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 4rem 0;
+  }
+  
+  .detail-section {
+    /* Removed background, border, padding and shadow */
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  
+  .detail-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    max-width: 75ch;
+  }
+  
+  /* Video Section */
+  .video-container {
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .video-wrapper {
+    position: relative;
+  }
+  
+  .video-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Methods Section */
+  .methods-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-image-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery-caption {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--color-text);
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+/* 报告按钮样式 */
+.report-link {
+  /* 基本样式 */
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  
+  /* 亮色模式样式 */
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #333 !important;
+}
+
+/* 深色模式样式 - 黑色背景，白色边框和文字 */
+:root.theme-dark .report-link,
+[data-theme="dark"] .report-link,
+.dark .report-link,
+.dark-theme .report-link {
+  background-color: #1a1a1a !important; /* 深色背景，与周围环境相似 */
+  color: white !important;
+  border: 2px solid white !important; /* 白色边框 */
+}
+
+/* 悬停效果 */
+.report-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  opacity: 0.9; /* 轻微的透明度变化提供视觉反馈 */
+}
+  /* Responsive Adjustments */
+  @media (max-width: 900px) {
+    .methods-gallery {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .intro-section {
+      padding: 2rem;
+    }
+    
+    .detail-title {
+      font-size: 1.6rem;
+    }
+  }
+</style>

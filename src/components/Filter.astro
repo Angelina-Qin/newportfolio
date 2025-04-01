@@ -1,22 +1,10 @@
 ---
-import { filterItems } from '../data/content.ts';
+const filterItems = []; // 保留这行
 const {count} = Astro.props;
 ---
-<div class="section filter ">
-	<div class="border-bottom">
-		<div class="row filter-wrapper relative overflow-hidden col-1a">
-			<ul class="flex filter-list filter-options">
-				<button class="filter-item filter-tag active" class="" data-group="all">
-					全部 <span>({count})</span>
-				</button>
-                {filterItems.map((item) => (
-                    <button  class="filter-item filter-tag" data-group={item.dataGroup}>
-                      {item.content}
-                    </button>
-                ))}
-			</ul>
-		</div>
-	</div>
+<div class="filter-options" style="display: none;">
+  <!-- 隐藏的筛选器元素，但结构保留，以防其他组件依赖它 -->
+  <button class="filter-item filter-tag active" data-group="all" style="display: none;"></button>
 </div>
 
 

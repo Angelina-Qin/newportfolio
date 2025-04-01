@@ -889,3 +889,172 @@ html::-webkit-scrollbar-thumb:active {
   background-color: var(--color-divider);
   margin: var(--size-top, 64px) 0 var(--size-bottom, 64px);
 }/*# sourceMappingURL=global.css.map */
+
+/* 更明确的按钮样式，强制设置颜色 */
+.report-link {
+  /* 基本样式保持不变 */
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  
+  /* 亮色模式下强制使用黑色文字和白色背景 */
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #333 !important;
+}
+
+/* 暗色模式下使用白色文字和深色背景 */
+:root.theme-dark .report-link,
+[data-theme="dark"] .report-link,
+.dark .report-link,
+.dark-theme .report-link {
+  background-color: var(--color-accent, #4a6cf7) !important;
+  color: white !important;
+}
+
+/* 左右交错项目布局的附加样式 */
+
+/* 容器调整 */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 项目行样式 */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-row.reverse {
+  direction: rtl;
+}
+
+.project-row.reverse .project-info {
+  direction: ltr;
+}
+
+/* 项目内容部分 */
+.project-content {
+  padding: 2rem 1rem;
+}
+
+.project-media {
+  position: relative;
+}
+
+/* 项目图片容器 */
+.project-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-normal);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 项目图片 */
+.project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* 项目文本信息 */
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--color-100);
+}
+
+.project-desc {
+  font-size: 1.1rem;
+  color: var(--color-400);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--color-500);
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-200);
+}
+
+/* 响应式调整 */
+@media (max-width: 1023px) {
+  .project-list {
+    gap: 4rem;
+  }
+  
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .project-row.reverse {
+    direction: ltr;
+  }
+  
+  .project-content {
+    order: 2;
+    padding: 1.5rem 0;
+  }
+  
+  .project-media {
+    order: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* 英雄区域增强 */
+.hero {
+  padding: 5rem 0 5rem;
+}
+
+.hero .section-header {
+  margin-bottom: 2rem;
+}
+
