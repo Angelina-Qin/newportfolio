@@ -11,7 +11,7 @@ interface Nav {
 
 // 定义导航项
 export const nav: Nav = {
-    avatar: '/newportfolio/public/assets/author.png',
+    avatar: '/public/assets/author.png',
     items: [
         { label: 'Portfolio', href: '/newportfolio/', target: '_self' },// target 为 '_blank' 打开新链接
         { label: 'About', href: '/newportfolio/about', target: '_self' },
