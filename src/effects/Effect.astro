@@ -1,34 +1,34 @@
 <div class="train-1">
 	<div class="effects train-icons">
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/bezier.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/bezier.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/game.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/game.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/hourglass.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/hourglass.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/image.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/image.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/rocket.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/rocket.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/compass.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/compass.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/battery.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/battery.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/lamp.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/lamp.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/coffee-cup.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/coffee-cup.png)"></div>
 		</div>
 		<div class="effects__img">
-			<div class="effects__img-inner" style="background-image:url(/assets/effects/3dicons/weather.png)"></div>
+			<div class="effects__img-inner" style="background-image:url(/newportfolio/assets/effects/3dicons/weather.png)"></div>
 		</div>
 	</div>
 </div>
@@ -39,11 +39,11 @@
 </div>
  -->
 
-<script is:inline src="/plugins/effects/imagesloaded.pkgd.min.js"></script>
-<script is:inline src="/plugins/effects/gsap.min.js"></script>
+<script is:inline src="/newportfolio/plugins/effects/imagesloaded.pkgd.min.js"></script>
+<script is:inline src="/newportfolio/plugins/effects/gsap.min.js"></script>
 <script is:inline type="module">
-	import { preloadImages } from '/plugins/effects/utils.js';
-	import { ImageTrail } from '/plugins/effects/imageTrail.js';
+	import { preloadImages } from '/newportfolio/plugins/effects/utils.js';
+	import { ImageTrail } from '/newportfolio/plugins/effects/imageTrail.js';
 				const images = [
 					'bezier.png',
 					'game.png',
@@ -138,16 +138,16 @@
 							updateEffectsClass(currentState);
                 switch (currentState) {
                     case 0:
-                        changeImages(images, '/assets/effects/3dicons/');
+                        changeImages(images, '/newportfolio/assets/effects/3dicons/');
                         break;
                     case 1:
-                        changeImages(logoImages, '/assets/effects/logo/');
+                        changeImages(logoImages, '/newportfolio/assets/effects/logo/');
                         break;
                     case 2:
-                        changeImages(glassImages, '/assets/effects/glass-prism/');
+                        changeImages(glassImages, '/newportfolio/assets/effects/glass-prism/');
                         break;
                     default:
-                        changeImages(images, '/assets/effects/3dicons/');
+                        changeImages(images, '/newportfolio/assets/effects/3dicons/');
                 }
 								updateButtonDisplay(currentState);
             });

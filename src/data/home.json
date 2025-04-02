@@ -1,44 +1,42 @@
-
 [
-	{
-		"id": "6",
-		"cover": "/assets/cover/cover-buckethead.png",
-		"title": "Buckethead",
-		"desc": "An educational game",
-		"detail": "/detail/buckethead",
-		"category": "ui",
-		"tag": "Game",
-		"date": "2024-10-07"
-	},
-	{
-		"id": "7",
-		"cover": "/assets/cover/cover-ecjoy.png",
-		"title": "Ecjoy",
-		"desc": "An application for finding hobby classes",
-		"detail": "/detail/ecjoy",
-		"category":  "web",
-		"tag": "UI/UX design",
-		"date": "2024-10-8"
-	},
-	{
-		"id": "8",
-		"cover": "/assets/cover/cover-agora.jpg",
-		"title": "Agora",
-		"desc": "A platform connecting students",
-		"detail": "/detail/agora",
-		"category": "UX/UI design",
-		"tag": "UX/UI design",
-		"date": "2024-10-20"
-	},
-	{
-		"id": "9",
-		"cover": "/assets/cover/cover-manse.png",
-		"title": "Manse",
-		"desc": "A feedback bot",
-		"detail":  "/detail/manse",
-		"category": "web",
-		"tag": "UX/UI design",
-		"date": "2024-10-20"
-	}
-
+  {
+    "id": "6",
+    "cover": "/newportfolio/assets/cover/cover-buckethead.png",
+    "title": "Buckethead",
+    "desc": "An educational game",
+    "detail": "/newportfolio/detail/buckethead",
+    "category": "ui",
+    "tag": "Game",
+    "date": "2024-10-07"
+  },
+  {
+    "id": "7",
+    "cover": "/newportfolio/assets/cover/cover-ecjoy.png",
+    "title": "Ecjoy",
+    "desc": "An application for finding hobby classes",
+    "detail": "/newportfolio/detail/ecjoy",
+    "category": "web",
+    "tag": "UI/UX design",
+    "date": "2024-10-8"
+  },
+  {
+    "id": "8",
+    "cover": "/newportfolio/assets/cover/cover-agora.jpg",
+    "title": "Agora",
+    "desc": "A platform connecting students",
+    "detail": "/newportfolio/detail/agora",
+    "category": "UX/UI design",
+    "tag": "UX/UI design",
+    "date": "2024-10-20"
+  },
+  {
+    "id": "9",
+    "cover": "/newportfolio/assets/cover/cover-manse.png",
+    "title": "Manse",
+    "desc": "A feedback bot",
+    "detail": "/newportfolio/detail/manse",
+    "category": "web",
+    "tag": "UX/UI design",
+    "date": "2024-10-20"
+  }
 ]
