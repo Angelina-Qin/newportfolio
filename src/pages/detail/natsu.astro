@@ -140,7 +140,7 @@ import horizontalMenuImage from '../../assets/projects/natsu/natsu-horizontal.pn
     const nextButton = carousel.querySelector('.carousel-button.next');
     let currentIndex = 0;
 
-    function showSlide(index) {
+    function showSlide(index: number) {
       // Loop back to the start if we go past the end
       if (index >= slides.length) {
         currentIndex = 0;
@@ -163,13 +163,15 @@ import horizontalMenuImage from '../../assets/projects/natsu/natsu-horizontal.pn
     }
 
     // Event listeners for the buttons
-    nextButton.addEventListener('click', () => {
-      showSlide(currentIndex + 1);
-    });
+    if (prevButton && nextButton) {
+      nextButton.addEventListener('click', () => {
+        showSlide(currentIndex + 1);
+      });
 
-    prevButton.addEventListener('click', () => {
-      showSlide(currentIndex - 1);
-    });
+      prevButton.addEventListener('click', () => {
+        showSlide(currentIndex - 1);
+      });
+    }
 
     // Show the first slide initially
     showSlide(currentIndex);
