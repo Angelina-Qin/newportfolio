@@ -1,0 +1,288 @@
+---
+// Import statements remain the same
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+
+import oldMenuImage from '../../assets/projects/natsu/natsu-old-menu.jpg';
+import verticalMenuImage from '../../assets/projects/natsu/natsu-vertical.png';
+import horizontalMenuImage from '../../assets/projects/natsu/natsu-horizontal.png';
+---
+
+<DetailPostLayout
+  title="Natsu Menu Redesign"
+  description="A UX case study on transforming a restaurant's ordering tool, improving usability, and elevating the brand experience through user-centric design."
+  keywords="UX design, UI design, information architecture, food photography, restaurant menu design, user experience, case study"
+>
+  <div class="post">
+    <main class="post-wrapper">
+      <DetailHeader
+        tag="UX/UI DESIGN & PHOTOGRAPHY"
+        description="Feb - Mar 2022">
+        <h1 class="font-type">
+          Natsu Menu Redesign
+        </h1>
+      </DetailHeader>
+
+      <section class="natsu-content">
+
+        <div class="overview-section">
+          <div class="section-heading"><span class="section-number">01</span><h2>Project Overview</h2></div>
+          <div class="section-content"><p>Natsu is a popular Japanese restaurant in Tampere's central market hall. While working there as a cashier, I gained firsthand insight into a critical operational bottleneck: the menu. It was not only hindering the customer's ordering experience but also failing to reflect the restaurant's quality. Recognizing the opportunity to apply my design skills to a real-world problem, I initiated a complete redesign to solve these tangible issues.</p></div>
+        </div>
+        <div class="before-after-section">
+            <div class="section-heading"><span class="section-number">02</span><h2>The Problem: A Usability Bottleneck</h2></div>
+            <div class="grid-2-col">
+                <div class="text-content">
+                    <h3 class="subsection-heading">Identified Pain Points</h3>
+                    <p>The original menu suffered from critical usability and design flaws that directly impacted both customer experience and business operations.</p>
+                    <ul class="pain-points-list">
+                        <li><strong>Poor Usability & Accessibility:</strong> Low-contrast text was difficult to read in dim lighting. Food images were disconnected from their descriptions, forcing users to hunt for information and increasing their <strong>cognitive load</strong>.</li>
+                        <li><strong>Lack of Information Architecture:</strong> Dishes were listed without logical grouping. New items were appended randomly, creating a confusing and overwhelming list that hindered efficient decision-making.</li>
+                        <li><strong>Inconsistent Brand Image:</strong> An amateur, presentation-software aesthetic was inconsistent with the restaurant's established reputation, diminishing the overall brand experience.</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <Image src={oldMenuImage} alt="A photo of the old, cluttered Natsu menu" class="full-width-image" style="border-radius: 12px; border: 1px solid var(--color-border);" />
+                    <p style="text-align: center; font-style: italic; opacity: 0.8; margin-top: 1rem;">The original menu lacked structure and readability.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="design-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2>The Solution: Interactive Design Showcase</h2>
+          </div>
+          <div class="section-content">
+
+            <h3 class="subsection-heading">1. Rebuilding the Information Architecture</h3>
+            <p>My first priority was to create order from chaos. By applying core IA principles, I grouped all dishes into logical categories (Donburi, Stir-fried, Katsu, etc.). This structure aligns with customers' <strong>mental models</strong>, allowing them to navigate the options intuitively and significantly <strong>reducing cognitive load</strong>.</p>
+            
+            <h3 class="subsection-heading">2. Enhancing Visual Design & Usability</h3>
+            <p>To address readability, I switched to a high-contrast theme with a light background and clean typography, establishing a clear <strong>visual hierarchy</strong>. I applied the <strong>Gestalt principle of Proximity</strong> by placing each dish's photo directly adjacent to its name and description, making the connection effortless. Additionally, I introduced clear <strong>visual cues</strong>, like a 'V' icon for vegetarian options, to streamline the selection process for all users.</p>
+
+            <h3 class="subsection-heading">3. Strengthening the Brand & Photography</h3>
+            <p>A key part of elevating the brand was replacing the old imagery. <strong>I personally directed, shot, and post-processed all the food photography.</strong> High-quality visuals not only stimulate appetite but also convey the quality of the food and build brand trust. Finally, to accommodate different use cases, I developed two distinct layouts:</p>
+
+            <div class="carousel">
+              <div class="carousel-slides">
+                <div class="carousel-slide active" data-slide="0">
+                  <h4>Vertical Layout</h4>
+                  <p class="caption">Optimized for exterior displays and single-user viewing, this layout follows a natural top-to-bottom reading flow.</p>
+                  <Image src={verticalMenuImage} alt="Vertical layout of the new menu" />
+                </div>
+                <div class="carousel-slide" data-slide="1">
+                  <h4>Horizontal Layout</h4>
+                  <p class="caption">Ideal for in-store tabletop use, the grid allows multiple people to easily scan and compare different sections.</p>
+                  <Image src={horizontalMenuImage} alt="Horizontal layout of the new menu" />
+                </div>
+              </div>
+              <button class="carousel-button prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="carousel-button next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="insight-section">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2>Outcome & Impact</h2>
+          </div>
+          <div class="insight-content">
+            <p>The redesigned menu delivered measurable positive results, validating the power of applying a UX mindset to a physical product. The restaurant adopted both designs for different contexts.</p>
+            <div class="goals-cards" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+              <div class="goals-card">
+                <h4>Increased Engagement</h4>
+                <p>"The new poster menu noticeably increased the number of passersby who stopped to look, directly increasing foot traffic."</p>
+              </div>
+              <div class="goals-card">
+                <h4>Streamlined Ordering</h4>
+                <p>"Staff and customers reported that the clear photos and categories dramatically reduced ordering time and questions, improving service efficiency."</p>
+              </div>
+              <div class="goals-card">
+                <h4>Improved Brand Perception</h4>
+                <p>"Regular customers expressed high satisfaction, noting the new menu felt more professional and aligned with the quality of the food they loved."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-section">
+            <div class="section-heading">
+                <span class="section-number">05</span>
+                <h2>Personal Reflection</h2>
+            </div>
+            <div class="section-content">
+                <div class="user-groups-highlight">
+                    <p>This project proved to me that the core principles of UX—understanding users, organizing information, and optimizing for usability—are universal. They apply just as effectively to a physical menu as they do to a digital app.</p>
+                </div>
+                <p>This project wasn't assigned; it was born from observing a real-world problem and taking the initiative to solve it. Managing the entire lifecycle, from analysis and strategy to hands-on photography and implementation, was an invaluable experience that solidified my understanding of the holistic design process and the joy of creating tangible value.</p>
+            </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DetailPostLayout>
+
+<script>
+  // --- CAROUSEL JAVASCRIPT ---
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    if (!carousel) return;
+
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevButton = carousel.querySelector('.carousel-button.prev');
+    const nextButton = carousel.querySelector('.carousel-button.next');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      // Loop back to the start if we go past the end
+      if (index >= slides.length) {
+        currentIndex = 0;
+      }
+      // Loop to the end if we go before the beginning
+      else if (index < 0) {
+        currentIndex = slides.length - 1;
+      }
+      else {
+        currentIndex = index;
+      }
+      
+      // Hide all slides
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+      });
+
+      // Show the correct one
+      slides[currentIndex].classList.add('active');
+    }
+
+    // Event listeners for the buttons
+    nextButton.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+
+    prevButton.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
+    });
+
+    // Show the first slide initially
+    showSlide(currentIndex);
+  });
+</script>
+
+<style>
+  /* --- NEW CAROUSEL STYLES --- */
+  .carousel {
+    position: relative;
+    max-width: 900px; /* Adjust max-width as needed */
+    margin: 3rem auto 0; /* Centered with top margin */
+    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  .carousel-slides {
+    /* This container ensures consistent height */
+    min-height: 550px; /* Adjust if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-slide {
+    display: none; /* All slides are hidden by default */
+    text-align: center;
+    width: 100%;
+  }
+  .carousel-slide.active {
+    display: block; /* Only the active slide is shown */
+  }
+  .carousel-slide h4 {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+  }
+  .carousel-slide .caption {
+    margin-top: 0;
+    max-width: 60ch;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* This is the key to controlling the image size! */
+  .carousel-slide img {
+    max-height: 500px; /* The tall vertical menu will shrink to this height */
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .carousel-button.prev {
+    left: -20px;
+  }
+  .carousel-button.next {
+    right: -20px;
+  }
+  @media (max-width: 950px) {
+    .carousel-button.prev { left: 10px; }
+    .carousel-button.next { right: 10px; }
+  }
+
+
+  /* All your other styles remain below */
+  .hero-container { margin-bottom: 4rem; }
+  /* ... (rest of your existing CSS) ... */
+  .hero-image-wrapper { position: relative; border-radius: 12px; overflow: hidden; max-height: 700px; aspect-ratio: 16 / 9; border: 1px solid var(--color-border, rgba(255,255,255,0.1)); }
+  .hero-image { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; }
+  .before-after-section { margin-top: 5rem; }
+  .grid-2-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .grid-2-col .subsection-heading { margin-top: 0; }
+  .pain-points-list { padding-left: 1.2rem; line-height: 1.8; }
+  .pain-points-list li { margin-bottom: 1rem; }
+  .pain-points-list li strong { color: var(--color-accent); }
+  .section-heading { display: flex; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--color-border, rgba(255,255,255,0.1)); padding-bottom: 1rem; }
+  .section-number { font-size: 1.5rem; font-weight: bold; color: var(--color-accent); margin-right: 1rem; opacity: 0.8; }
+  .section-heading h2 { margin: 0; font-size: 1.8rem; color: var(--color-text); }
+  .subsection-heading { font-size: 1.5rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1.5rem; color: var(--color-text); }
+  .user-groups-highlight { background-color: var(--color-bg-secondary, rgba(255,255,255,0.03)); border-left: 3px solid var(--color-accent); padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+  .user-groups-highlight p { margin: 0; font-style: italic; }
+  .goals-cards { display: grid; gap: 2rem; margin-top: 2rem; }
+  .goals-card { background-color: var(--color-bg-secondary, rgba(255,255,255,0.03)); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--color-border, rgba(255,255,255,0.1)); }
+  .goals-card h4 { margin-top: 0; margin-bottom: 1rem; color: var(--color-accent); }
+  .goals-card p { margin: 0; }
+  .full-width-image { width: 100%; height: auto; display: block; }
+  .overview-section, .research-section, .insight-section, .design-section { margin-top: 5rem; }
+  p { margin-bottom: 1.5rem; line-height: 1.6; }
+  
+  @media (max-width: 768px) {
+    .grid-2-col { grid-template-columns: 1fr; }
+    .section-heading { flex-direction: column; align-items: flex-start; }
+    .section-number { margin-bottom: 0.5rem; }
+  }
+</style>

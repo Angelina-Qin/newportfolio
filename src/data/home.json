@@ -1,5 +1,15 @@
 [
   {
+    "id": "5",
+    "cover": "/newportfolio/assets/cover/cover-buckethead.png",
+    "title": "Natsu",
+    "desc": "An educational game",
+    "detail": "/newportfolio/detail/natsu",
+    "category": "Menu design",
+    "tag": "Menu design",
+    "date": "2024-10-07"
+  },
+  {
     "id": "6",
     "cover": "/newportfolio/assets/cover/cover-buckethead.png",
     "title": "Buckethead",
