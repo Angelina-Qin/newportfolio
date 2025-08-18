@@ -58,40 +58,44 @@ const isActive = (href = "") =>
 </nav>
 <Effect/>
 
-<script lang="ts">
+<script is:inline>
   class MenuButton extends HTMLElement {
     constructor() {
       super();
 
-      this.appendChild(this.querySelector('template')!.content.cloneNode(true));
-      const btn = this.querySelector('button')!;
-      const menu = document.getElementById('menu-content') as HTMLElement;
+      // 注入按钮
+      const tpl = this.querySelector('template');
+      if (tpl && tpl.content) this.appendChild(tpl.content.cloneNode(true));
+
+      const btn = this.querySelector('button');
+      const menu = document.getElementById('menu-content');
+      if (!btn || !menu) return;
 
       // 默认收起
       menu.hidden = true;
 
-      // 显式标注 boolean
-      const setExpanded = (expand: boolean) => {
+      const setExpanded = (expand) => {
         btn.setAttribute('aria-expanded', expand ? 'true' : 'false');
         menu.hidden = !expand;
       };
 
       btn.addEventListener('click', () => setExpanded(menu.hidden));
 
-      // 标注为 MediaQueryList | MediaQueryListEvent
-      const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
-        const matches = 'matches' in e ? e.matches : (e as MediaQueryList).matches;
+      const handleViewports = (e) => {
+        const matches = e && 'matches' in e ? e.matches : false;
         setExpanded(matches);
         btn.hidden = matches;
       };
 
-      const mediaQueries = window.matchMedia('(min-width: 50em)');
-      handleViewports(mediaQueries);
-      mediaQueries.addEventListener('change', handleViewports);
+      const mq = window.matchMedia('(min-width: 50em)');
+      handleViewports(mq);
+      if (mq.addEventListener) mq.addEventListener('change', handleViewports);
+      else if (mq.addListener) mq.addListener(handleViewports); // 兼容老浏览器
     }
   }
   customElements.define('menu-button', MenuButton);
 </script>
+
 
 
 <style>
