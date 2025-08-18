@@ -14,6 +14,7 @@ export const nav: Nav = {
     avatar: '/newportfolio/assets/author.png',
     items: [
         { label: 'Portfolio', href: '/newportfolio/', target: '_self' },// target 为 '_blank' 打开新链接
+        { label: 'Research', href: '/newportfolio/research', target: '_self' },
         { label: 'About', href: '/newportfolio/about', target: '_self' },
     ],
 };
@@ -33,13 +34,13 @@ export const homeTdk: SeoTdk = {
     description: 'Moshi',
     keywords: 'Moshi'
 }
-// SEO TDK about
-export const publicationsTdk: SeoTdk = {
-    title: 'Moshi Qin - Publications',
-    description: 'You can find more about me here',
-    keywords: 'Moshi,blog'
+// SEO TDK research
+export const researchTdk: SeoTdk = {
+    title: 'Moshi Qin - Research',
+    description: 'You can find more about my research here',
+    keywords: 'Moshi,research'
 }
-// SEO TDK Publication
+// SEO TDK about
 export const aboutTdk: SeoTdk = {
     title: 'Moshi Qin - About',
     description: '设计师Moshi的个人介绍',
@@ -93,7 +94,7 @@ interface PageTag {
 export const pageTag: PageTag = {
     index: 'PORTFOLIO',
     project: 'PROJECTS',
-    publications: 'PUBLICATIONS',
+    research: 'RESEARCH',
     about: 'ABOUT'
 }
 
@@ -107,6 +108,8 @@ interface PageDescription {
 }
 export const pageDescription: PageDescription = {
     index: 'Designing with purpose. Creating with passion. Driven by curiosity.',
+    research: 'Exploring with depth. Thinking with clarity. Fueled by inquiry.',
+    about: 'Observing with empathy. Growing with resilience. Learning with humility.',
 //  project: "这是我的部分项目展示",
 }
 
