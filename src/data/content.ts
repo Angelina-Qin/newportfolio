@@ -88,7 +88,7 @@ export const socialLinks = [
 interface PageTag {
     index: string
     project: string
-    publications: string
+    research: string
     about: string
 }
 export const pageTag: PageTag = {
@@ -103,7 +103,7 @@ export const pageTag: PageTag = {
 interface PageDescription {
     index?: string
     project?: string
-    blog?: string
+    research?: string
     about?: string
 }
 export const pageDescription: PageDescription = {

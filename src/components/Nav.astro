@@ -58,30 +58,41 @@ const isActive = (href = "") =>
 </nav>
 <Effect/>
 
-<script>
-	class MenuButton extends HTMLElement {
-		constructor() {
-			super();
-			this.appendChild(this.querySelector('template')!.content.cloneNode(true));
-			const btn = this.querySelector('button')!;
-			const menu = document.getElementById('menu-content')!;
-			menu.hidden = true;
-			const setExpanded = (expand) => {
-				btn.setAttribute('aria-expanded', expand ? 'true' : 'false');
-				menu.hidden = !expand;
-			};
-			btn.addEventListener('click', () => setExpanded(menu.hidden));
-			const handleViewports = (e) => {
-				setExpanded(e.matches);
-				btn.hidden = e.matches;
-			};
-			const mediaQueries = window.matchMedia('(min-width: 50em)');
-			handleViewports(mediaQueries);
-			mediaQueries.addEventListener('change', handleViewports);
-		}
-	}
-	customElements.define('menu-button', MenuButton);
+<script lang="ts">
+  class MenuButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.appendChild(this.querySelector('template')!.content.cloneNode(true));
+      const btn = this.querySelector('button')!;
+      const menu = document.getElementById('menu-content') as HTMLElement;
+
+      // 默认收起
+      menu.hidden = true;
+
+      // 显式标注 boolean
+      const setExpanded = (expand: boolean) => {
+        btn.setAttribute('aria-expanded', expand ? 'true' : 'false');
+        menu.hidden = !expand;
+      };
+
+      btn.addEventListener('click', () => setExpanded(menu.hidden));
+
+      // 标注为 MediaQueryList | MediaQueryListEvent
+      const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
+        const matches = 'matches' in e ? e.matches : (e as MediaQueryList).matches;
+        setExpanded(matches);
+        btn.hidden = matches;
+      };
+
+      const mediaQueries = window.matchMedia('(min-width: 50em)');
+      handleViewports(mediaQueries);
+      mediaQueries.addEventListener('change', handleViewports);
+    }
+  }
+  customElements.define('menu-button', MenuButton);
 </script>
+
 
 <style>
 	nav {
