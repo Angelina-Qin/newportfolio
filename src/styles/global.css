@@ -1058,3 +1058,33 @@ html::-webkit-scrollbar-thumb:active {
   margin-bottom: 2rem;
 }
 
+/* === Borders visibility hotfix (safe to remove anytime) === */
+/* 提升亮色下的对比度；暗色保持轻描边 */
+:root {
+  /* 亮色边框、发丝线：选中在白底/浅灰底上也能看见的对比度 */
+  --border: rgba(17, 24, 39, 0.16);     /* ≈ slate-900 @16% */
+  --hairline: rgba(17, 24, 39, 0.08);
+  /* 聚焦环（可选）：如果你有 :focus ring */
+  --ring: rgba(59, 130, 246, 0.35);
+}
+
+:root.theme-dark {
+  /* 暗色边框、发丝线 */
+  --border: rgba(255, 255, 255, 0.18);
+  --hairline: rgba(255, 255, 255, 0.12);
+  --ring: rgba(96, 165, 250, 0.35);
+}
+
+/* 默认把所有元素的 border-color 指向 --border（只影响“有边框”的元素） */
+*, *::before, *::after { border-color: var(--border); }
+
+/* 常见分割线更细一点的视觉 */
+hr, .divider { border-color: var(--hairline); }
+
+/* 你站里常用“伪边框”（inset 阴影）的卡片/区域，给它吃统一变量 */
+.card, .panel, .surface, .prose :where(table, th, td) {
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+/* 导航底部分隔线（可选，加上更稳） */
+nav { border-bottom: 1px solid var(--hairline); }

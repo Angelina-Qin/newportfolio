@@ -11,13 +11,18 @@ import Icon from './Icon.astro';
 </theme-toggle>
 
 <style>
+	:host {
+		display: inline-flex;
+		align-items: center;
+	}
+
 	button {
 		display: flex;
 		border: 0;
 		border-radius: 999rem;
 		padding: 0;
 		background-color: var(--color-999);
-		box-shadow: inset 0 0 0 1px var(--accent-overlay);
+		box-shadow: inset 0 0 0 1px var(--border);
 		color: var(--color-100);
 		cursor: pointer;
 	}
@@ -69,24 +74,33 @@ import Icon from './Icon.astro';
 	class ThemeToggle extends HTMLElement {
 		constructor() {
 			super();
+		}
 
+		connectedCallback() {
 			const button = this.querySelector('button')!;
+			if (!button) {
+				console.error('ThemeToggle: Button element not found!'); // 增加错误日志
+				return;
+			}
 
-			/** Set the theme to dark/light mode. */
+			// 添加这行，用于诊断
+			console.log('ThemeToggle: Event listener is being attached to this button:', button);
+
 			const setTheme = (dark: boolean) => {
 				document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
 				button.setAttribute('aria-pressed', String(dark));
 			};
 
-			// Toggle the theme when a user clicks the button.
-			button.addEventListener('click', () => setTheme(!this.isDark()));
+			button.addEventListener('click', () => {
+				// 这是最关键的诊断日志！！！
+				console.log('Button was clicked! The theme should now toggle.');
 
-			// Initialize button state to reflect current theme.
-			setTheme(this.isDark());
-		}
-
-		isDark() {
-			return document.documentElement.classList.contains('theme-dark');
+				const isCurrentlyDark = document.documentElement.classList.contains('theme-dark');
+				setTheme(!isCurrentlyDark);
+			});
+			
+			const isInitiallyDark = document.documentElement.classList.contains('theme-dark');
+			setTheme(isInitiallyDark);
 		}
 	}
 	customElements.define('theme-toggle', ThemeToggle);

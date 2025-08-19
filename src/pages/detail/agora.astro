@@ -7,544 +7,898 @@ import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
 
 <DetailPostLayout
   title="Agora"
-  description="A remote peer support service for university students on study topics and student life."
-  keywords="remote learning support,peer tutoring,online education platform,student support network,university peer help"
+  description="A comprehensive UX research and design project creating a peer support platform for university students, addressing help-seeking challenges through evidence-based design solutions."
+  keywords="UX research,user experience design,peer learning platform,university students,qualitative research,semi-structured interviews,accessibility design,responsive design"
 >
   <div class="post">
     <main class="post-wrapper">
       <DetailHeader
-        tag="UX DESIGN"
-        description="Oct - Dec 2020">
+        tag="UX RESEARCH & DESIGN"
+        description="Oct - Dec 2020 • Academic Project">
         <h1 class="font-type">
           Agora
         </h1>
       </DetailHeader>
 
       <section class="agora-content">
-        <!-- Hero image with visual enhancement -->
         <div class="hero-container">
           <div class="hero-image-wrapper">
-            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63d2895db64bcc13414173ec_0.0-login%20(1).png" alt="Agora platform login interface" class="hero-image" />
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63d2895db64bcc13414173ec_0.0-login%20(1).png" alt="Agora platform login interface showing clean, accessible design with university credential integration" class="hero-image" />
+          </div>
+        </div>
+        
+        <div class="project-details-section">
+          <div class="detail-card">
+            <h4>My Role</h4>
+            <p>Lead UX Researcher & Product Designer</p>
+            <p class="detail-sub">Research planning, interview moderation, thematic analysis, interaction design, accessibility audit</p>
+          </div>
+          <div class="detail-card">
+            <h4>Team & Timeline</h4>
+            <p>Moshi Qin, Annika Halonen, Mariana Perez</p>
+            <p class="detail-sub">8 weeks</p>
+          </div>
+          <div class="detail-card">
+            <h4>Methods & Tools</h4>
+            <p>Semi-structured interviews, thematic analysis, wireframing, high-fidelity prototyping</p>
+            <p class="detail-sub">Figma, Zoom, content analysis, accessibility testing</p>
           </div>
         </div>
 
-
-          <!-- Project overview with enhanced styling -->
-          <div class="overview-section">
-            <div class="section-heading">
-              <span class="section-number">01</span>
-              <h2>Project overview</h2>
-            </div>
-            <div class="section-content">
-              <p>Our team was asked to design a web service for offering remote peer support for university students on specific study topics or topics related to student life. The service should support connecting people who need or can offer peer support on specific topics and the service should offer features for the peer support activities. We followed a process of researching, ideating, designing, and iterating to develop this product.</p>
-            </div>
+        <div class="overview-section content-section">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <h2>Problem Context & Research Foundation</h2>
           </div>
-          
-          
-          <!-- Research section with enhanced styling -->
-          <div class="research-section">
-            <div class="section-heading">
-              <span class="section-number">02</span>
-              <h2>Research & Analysis</h2>
-            </div>
-            
-            <div class="research-goals">
-              <h3 class="subsection-heading">Research goals</h3>
-              <div class="goals-list">
-                <div class="goal-item">
-                  <span class="goal-number">Q1</span>
-                  <p>What's the dynamic and interaction between a person that asks for help and a person that offers help?</p>
-                </div>
-                <div class="goal-item">
-                  <span class="goal-number">Q2</span>
-                  <p>What are the current services they use?</p>
-                </div>
-                <div class="goal-item">
-                  <span class="goal-number">Q3</span>
-                  <p>What are the needs, motivations, and challenges when they ask and request help?</p>
-                </div>
+          <div class="section-content">
+            <p>
+              University help-seeking is fragmented and inefficient. Students rely on personal networks through messaging apps (WhatsApp, Telegram, Teams, Discord), but newcomers and international students lack these connections. Our preliminary research revealed two critical gaps: <strong>students struggle to identify the "right person"</strong> to ask, and <strong>response time uncertainty</strong> creates decision-making anxiety.
+            </p>
+            <div class="problem-stats">
+              <div class="stat-item">
+                <span class="stat-number">5/6</span>
+                <span class="stat-label">students prefer asking peers over teachers for initial help</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3/6</span>
+                <span class="stat-label">report difficulty "finding the right person" to answer questions</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4/6</span>
+                <span class="stat-label">experience anxiety about email response wait times</span>
               </div>
             </div>
-            
-            <div class="research-method">
-              <h3 class="subsection-heading">Research method - in depth interview</h3>
-              <p>
-                We interviewed 2 Bachelor students, 2 Master's students, and 2 Doctorate students from 3 different countries. We wanted to know if there are different needs depending on the level of the studies and their backgrounds.
-              </p>
-              <p>
-                We constructed our interview questions based on different themes and it all starts with the basic question of "Have you needed any help related to your studies?". In this way, we hoped to understand their interaction when searching for peer support, needs, and challenges.
-              </p>
-            </div>
-            
-            <div class="data-analysis">
-              <h3 class="subsection-heading">Data analysis</h3>
-              <div class="analysis-container">
-                <div class="analysis-text">
-                  <p>The data analysis process we chose is content analysis. Content analysis is a method that uses qualitative data to find patterns or categories between users.</p>
-                </div>
-                <div class="analysis-image">
-                  <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba0e40bff1d51f384c924_Group%2080%20(1).png" alt="Data analysis process" />
-                </div>
+            <p>
+              <strong>Our hypothesis:</strong> A platform that combines public forum reach, private thread psychological safety, and direct 1:1 messaging—with clear credibility and availability signals—could bridge these gaps and create sustainable peer learning networks.
+            </p>
+          </div>
+        </div>
+        
+        <div class="research-section content-section">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <h2>Research Methodology & Process</h2>
+          </div>
+          
+          <div class="research-goals">
+            <h3 class="subsection-heading subsection-block">Research Objectives</h3>
+            <div class="goals-list">
+              <div class="goal-item">
+                <span class="goal-number">RQ1</span>
+                <p>Understand the dynamics between help-seekers and help-providers (proactive vs. reactive support patterns).</p>
+              </div>
+              <div class="goal-item">
+                <span class="goal-number">RQ2</span>
+                <p>Map current help-seeking channels and behavioral preferences across different question complexities.</p>
+              </div>
+              <div class="goal-item">
+                <span class="goal-number">RQ3</span>
+                <p>Identify barriers, motivations, and trust-building needs in peer academic support scenarios.</p>
               </div>
             </div>
           </div>
           
-          <!-- Insight section -->
-          <div class="insight-section">
-            <div class="section-heading">
-              <span class="section-number">03</span>
-              <h2>Insight</h2>
-            </div>
-            <div class="insight-content">
-              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2682581868b565136c6_Bracket%20Template%20(Community).png" alt="Project insights" class="full-width-image" />
-            </div>
-          </div>
-          
-          <!-- User groups section -->
-          <div class="user-groups-section">
-            <div class="section-heading">
-              <span class="section-number">04</span>
-              <h2>User groups</h2>
-            </div>
-            <div class="user-groups-content">
-              <p>
-                We have defined two user groups of the system. The main user group will be named help-seekers and the second user group is named experts. This result is based on the results from the interviews that for the system to work there needs to be two types of interaction. One for people seeking help, and one for people that are willing to help others.
-              </p>
-              <div class="user-groups-highlight">
+          <div class="research-method">
+            <h3 class="subsection-heading subsection-block">Semi-structured Interview Study</h3>
+            <div class="method-details-grid">
+              <div class="method-text">
                 <p>
-                  This is an interesting dilemma such as "The chicken or the egg". Which one comes first? Using the results from the interview we theorized that before there is someone offering help, there needs to be someone asking for help. Therefore, our main user group is the help-seekers.
+                  <strong>Sample:</strong> 6 participants across 3 universities (Tampere, Turku, Oulu) representing diverse academic levels and cultural backgrounds. Average age 25, gender split 4F/2M, nationalities: Finland (4), Vietnam (1), France (1).
+                </p>
+                <p>
+                  <strong>Protocol:</strong> 45–60-minute remote interviews via Zoom with audio recording consent. Each researcher conducted 2 interviews independently to ensure data trustworthiness and avoid acquaintance bias.
+                </p>
+                <p>
+                  <strong>Ethics:</strong> Informed consent obtained, recordings anonymized and deleted post-course completion, participants identified by codes (P1-P6) only.
                 </p>
               </div>
-              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2f561a25e7b261988b3_Design-37.jpg" alt="User groups analysis" class="full-width-image" />
-            </div>
-          </div>
-          
-          <!-- Personas section -->
-          <div class="personas-section">
-            <div class="section-heading">
-              <span class="section-number">05</span>
-              <h2>Personas</h2>
-            </div>
-            <div class="personas-content">
-              <p class="personas-intro">
-                Based on the results of interviews conducted earlier and the two user groups we defined for the system we have created two personas. One is the <strong>Help-seeker</strong> and the other one is <strong>Expert</strong>. Help-seeker is new to the university community which means they need help regarding all kinds of school issues from enrolling to courses to making new friends to get adapted into new environment. Experts are people who have experiences and are familiar with how things work in university. They could provide precious advises for help-seekers.
-              </p>
-              <div class="personas-cards">
-                <div class="persona-card">
-                  <div class="persona-card-header">
-                    <span class="persona-type">Help-seeker</span>
-                  </div>
-                  <div class="persona-card-body">
-                    <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba3613969af07ac74ebd3_Group%2078.png" alt="Help-seeker persona" class="persona-image" />
-                  </div>
-                </div>
-                <div class="persona-card">
-                  <div class="persona-card-header">
-                    <span class="persona-type">Expert</span>
-                  </div>
-                  <div class="persona-card-body">
-                    <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba372e8a2c6fa241d240b_Group%2077.png" alt="Expert persona" class="persona-image" />
-                  </div>
-                </div>
+              <div class="participant-breakdown card-style">
+                <h4>Participant Demographics</h4>
+                <ul>
+                  <li><strong>Education:</strong> 2 BSc, 2 MSc, 2 PhD students</li>
+                  <li><strong>Institutions:</strong> 4 Tampere University, 1 Turku University, 1 Oulu University</li>
+                  <li><strong>International representation:</strong> 33% non-Finnish participants</li>
+                </ul>
               </div>
             </div>
           </div>
           
-          <!-- Our goals section -->
-          <div class="goals-section">
-            <div class="section-heading">
-              <span class="section-number">06</span>
-              <h2>Our goals</h2>
+          <div class="data-analysis subsection-block">
+            <h3 class="subsection-heading">Thematic Analysis Process</h3>
+            <div class="analysis-container">
+              <div class="analysis-text">
+                <p>
+                  We conducted <strong>content/thematic analysis</strong> using interview questionnaire themes as parent categories. Each researcher analyzed their own interviews, then cross-analyzed others' transcripts for validation—totaling 15 hours of collaborative analysis.
+                </p>
+                <p>
+                  <strong>Key patterns emerged:</strong> 4/6 participants preferred text for simple questions but speaking for complex issues; 2/6 explicitly valued credibility signals; 2/6 desired anonymous asking options; 4/6 were motivated by extrinsic rewards for helping others.
+                </p>
+                <p>
+                  <strong>Reliability measures:</strong> Cross-researcher coding validation, evidence trail from quotes to insights, member checking considerations for future iterations.
+                </p>
+              </div>
+              <div class="analysis-image">
+                 <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba0e40bff1d51f384c924_Group%2080%20(1).png" alt="Thematic analysis process showing affinity mapping and content categorization workflow" />
+              </div>
             </div>
-            <div class="goals-content">
-              <div class="goals-cards">
-                <div class="goals-card">
-                  <h4>Usability goals</h4>
-                  <ul>
-                    <li>Efficiency</li>
-                    <li>Utility</li>
-                    <li>Learnability</li>
-                  </ul>
-                </div>
-                <div class="goals-card">
-                  <h4>User experience goals</h4>
-                  <ul>
-                    <li>Competence</li>
-                    <li>Safety</li>
-                    <li>Popularity - influence</li>
-                  </ul>
-                </div>
+          </div>
+        </div>
+        
+        <div class="insight-section content-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2>Evidence-Based Insights</h2>
+          </div>
+          
+          <div class="key-insights">
+            <h3 class="subsection-heading">Primary Research Findings</h3>
+            <div class="insights-grid">
+              <div class="insight-card">
+                <h4>🎯 Credibility & Discoverability</h4>
+                <p><strong>Finding:</strong> 3/6 participants struggled with "finding the right person" to answer questions.</p>
+                <p><strong>Evidence:</strong> <em>"Sometimes I do not know who should ask this question like who is the right person that can answer this"</em> (P6, MSc)</p>
+                <p><strong>Design implication:</strong> Expert profiles with course/topic tags, ratings, and response time metrics.</p>
+              </div>
+              
+              <div class="insight-card">
+                <h4>🔒 Psychological Safety</h4>
+                <p><strong>Finding:</strong> 2/6 participants mentioned anonymity would reduce asking barriers.</p>
+                <p><strong>Evidence:</strong> <em>"Maybe in person because I was shy, so asking 75 persons at the same time was a lot for a shy person"</em> (P1, PhD)</p>
+                <p><strong>Design implication:</strong> Anonymous-first questioning with optional identity reveal.</p>
+              </div>
+              
+              <div class="insight-card">
+                <h4>⚡ Multi-modal Communication</h4>
+                <p><strong>Finding:</strong> Communication method correlates with question complexity—text for simple, voice/video for complex.</p>
+                <p><strong>Evidence:</strong> <em>"If it's just a yes, no question... usually I just send an email. But personally, I prefer talk to people face to face... text messages are not enough"</em> (P5, P6)</p>
+                <p><strong>Design implication:</strong> Integrated text, audio, and video messaging capabilities.</p>
+              </div>
+              
+              <div class="insight-card">
+                <h4>🔄 Reactive Helping Behavior</h4>
+                <p><strong>Finding:</strong> 4/6 participants preferred responding to help requests rather than proactively seeking people to help.</p>
+                <p><strong>Evidence:</strong> <em>"If someone asks me, then I'm more than happy to help them... but I don't really actively go around, telling people that I can help them"</em> (P5, PhD)</p>
+                <p><strong>Design implication:</strong> Help-seeker centered design with expert matching system.</p>
               </div>
             </div>
           </div>
           
-          <!-- Conceptual model section -->
-          <div class="conceptual-model-section">
-            <div class="section-heading">
-              <span class="section-number">07</span>
-              <h2>Conceptual model</h2>
+          <div class="design-image-container">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2682581868b565136c6_Bracket%20Template%20(Community).png" alt="Research insights visualization showing user journey mapping and key pain points" class="full-width-image" />
+          </div>
+        </div>
+        
+        <div class="user-groups-section content-section">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2>User Archetypes & Strategic Focus</h2>
+          </div>
+          <div class="user-groups-content">
+            <p>
+              Based on behavioral analysis, we identified two complementary user groups: <strong>Help-Seekers</strong> (primary) and <strong>Experts</strong> (secondary). Our research revealed that helpers typically respond reactively rather than proactively search for people to help.
+            </p>
+            <div class="highlight-box">
+              <p><strong>Strategic Insight:</strong> Focus on optimizing the Help-Seeker experience first to generate demand signals, then use reputation systems and lightweight incentives to attract and retain Experts organically. The "chicken-or-egg" problem suggests Help-Seekers are the activation catalyst.</p>
             </div>
-            <div class="conceptual-model-content">
-              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba14acd4604aaa65e06e6_Blank%20diagram.png" alt="Conceptual model diagram" class="full-width-image" />
+            <div class="user-groups-comparison">
+              <div class="user-group card-style">
+                <h4>Help-Seekers (Primary Users)</h4>
+                <ul>
+                  <li>New students or course newcomers</li>
+                  <li>Value social support over independent search</li>
+                  <li>Need fast answers and credible sources</li>
+                  <li>Prefer low-barrier asking methods</li>
+                </ul>
+              </div>
+              <div class="user-group card-style">
+                <h4>Experts (Secondary Users)</h4>
+                <ul>
+                  <li>Experienced students with topic expertise</li>
+                  <li>Motivated by recognition and reciprocity</li>
+                  <li>Prefer responding to direct asks vs. searching</li>
+                  <li>Value course credits or reputation as incentives</li>
+                </ul>
+              </div>
+            </div>
+            <div class="design-image-container">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba2f561a25e7b261988b3_Design-37.jpg" alt="User groups analysis showing Help-Seeker and Expert personas with behavioral patterns and motivations" class="full-width-image" />
+          	</div>
+          </div>
+        </div>
+        
+        <div class="personas-section content-section">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <h2>Research-Driven Personas</h2>
+          </div>
+          <div class="personas-content">
+            <p class="personas-intro">
+              Our personas synthesize interview data into actionable archetypes. Each persona represents real behavioral patterns, quoted needs, and specific pain points discovered during research, ensuring design decisions remain user-centered throughout development.
+            </p>
+            <div class="personas-cards">
+              <div class="persona-card">
+                  <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba3613969af07ac74ebd3_Group%2078.png" alt="Help-seeker persona showing goals, behaviors, and frustrations of new university students seeking academic support" class="persona-image" />
+              </div>
+              <div class="persona-card">
+                  <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/63dba372e8a2c6fa241d240b_Group%2077.png" alt="Expert persona showing motivations and behaviors of experienced students willing to provide peer support" class="persona-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="goals-section content-section">
+          <div class="section-heading">
+            <span class="section-number">06</span>
+            <h2>Design Goals & Success Criteria</h2>
+          </div>
+          <div class="goals-content">
+            <div class="goals-cards">
+              <div class="goals-card">
+                <h4>Usability Goals</h4>
+                <ul>
+                  <li><strong>Efficiency:</strong> Help-seekers can find suitable expert and request support in ≤3 minutes (addressing "waiting time" pain points).</li>
+                  <li><strong>Utility:</strong> Support both academic help and student-life guidance with multiple communication modes (text, audio, video).</li>
+                  <li><strong>Learnability:</strong> Users understand core workflows without tutorials (critical given initial skepticism toward new platforms).</li>
+                </ul>
+              </div>
+              <div class="goals-card">
+                <h4>User Experience Goals</h4>
+                <ul>
+                  <li><strong>Competence:</strong> Users feel capable and confident when asking for or offering help (reduces asking barriers).</li>
+                  <li><strong>Safety & Trust:</strong> Low social risk environment with visible credibility signals (expert ratings, response rates).</li>
+                  <li><strong>Connection:</strong> Reduce academic isolation and strengthen peer learning communities beyond existing social circles.</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="success-metrics">
+              <h3 class="subsection-heading">Proposed Success Metrics</h3>
+              <div class="metrics-grid">
+                <div class="metric-item">
+                  <span class="metric-label">Primary:</span>
+                  <span class="metric-value">Time to receive help response</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Secondary:</span>
+                  <span class="metric-value">Expert match satisfaction, Answer quality ratings</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Behavioral:</span>
+                  <span class="metric-value">Repeat usage, Cross-course help seeking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="design-section content-section">
+          <div class="section-heading">
+            <span class="section-number">07</span>
+            <h2>Design Process & Rationale</h2>
+          </div>
+          
+          <div class="design-subsection">
+            <h3 class="subsection-heading">Information Architecture</h3>
+            <p>
+              The IA organizes around two primary user jobs—<strong>"Ask for help"</strong> and <strong>"Offer help"</strong>—with trust & safety woven throughout rather than relegated to secondary flows. This task-centric approach keeps navigation intuitive while supporting both public (reach) and private (safety) interaction modes.
+            </p>
+            <div class="design-image-container">
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cd0b1ee9e1142e11f34c_sitemap.png" alt="Information architecture sitemap showing Ask Help and Offer Help primary flows with public/private forum options" class="full-width-image" />
             </div>
           </div>
           
-          <!-- Design section -->
-          <div class="design-section">
-            <div class="section-heading">
-              <span class="section-number">08</span>
-              <h2>Design</h2>
+          <div class="design-subsection">
+            <h3 class="subsection-heading">Wireframing & Iteration Process</h3>
+            <p>
+              Our collaborative design process began with individual wireframing sessions to maintain creative diversity, followed by a structured design workshop using Mural for idea synthesis. Key early decisions included anonymous entry points, expert discovery interfaces, and scheduling integration.
+            </p>
+            <div class="highlight-box">
+              <p><strong>Critical iteration:</strong> Moved text editor toolbar above input field (not inside) to match user mental models and improve usability—identified during weekly design reviews.</p>
             </div>
-            
-            <!-- Sitemap subsection -->
-            <div class="design-subsection">
-              <h3 class="subsection-heading">Sitemap</h3>
-              <div class="design-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cd0b1ee9e1142e11f34c_sitemap.png" alt="Site map" class="full-width-image" />
-              </div>
+            <div class="design-image-container">
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e1fdbf9622904f229f01fd_Group%2033%20(1).png" alt="Wireframes" class="full-width-image" />
             </div>
-            
-            <!-- Wireframe subsection -->
-            <div class="design-subsection">
-              <h3 class="subsection-heading">Wireframe</h3>
-              <div class="design-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e1fdbf9622904f229f01fd_Group%2033%20(1).png" alt="Wireframes" class="full-width-image" />
+          </div>
+          
+          <div class="design-subsection">
+            <h3 class="subsection-heading">Visual Design System</h3>
+            <p>
+              <strong>Brand attributes:</strong> Reliable, Social, Friendly. We selected warm orange as the primary color to convey approachability and social connection (color psychology research). Poppins + Roboto typography pairing maintains modern readability while feeling welcoming rather than corporate.
+            </p>
+            <div class="design-principles">
+              <div class="principle-item card-style">
+                <h4>Color Strategy</h4>
+                <p>Orange primary promotes social warmth; accessibility-tested contrast ratios ensure AAA compliance.</p>
               </div>
-            </div>
-            
-            <!-- Style guide subsection -->
-            <div class="design-subsection">
-              <h3 class="subsection-heading">Style guide</h3>
-              <div class="accessibility-text">
-                <div class="accessibility-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0z"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
-                </div>
-                <div class="accessibility-content">
-                  <p>
-                    <strong>Accessibility</strong> was considered during the design process by making sure that the colors in the system are colorblind-friendly and provide enough contrast.
-                  </p>
-                  <p>
-                    Our goal was to make all the colors match the highest AAA standard of the accessibility of contrast. To ensure these were met, we used two Figma plugins to check: Colorblind and A11y - Color Contrast Checker.
-                  </p>
-                </div>
+              <div class="principle-item card-style">
+                <h4>Typography Hierarchy</h4>
+                <p>Clear H1-H3 heading structure supports screen readers and scanning patterns.</p>
               </div>
-              <div class="design-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e1fec781523f63b8e5ae37_style%20guide.png" alt="Style guide" class="full-width-image" />
-              </div>
-            </div>
-            
-            <!-- Solution subsection -->
-            <div class="design-subsection">
-              <h3 class="subsection-heading">Solution</h3>
-              <div class="design-image-container solution-images">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cc44e4036d68161e20a2_Group%20211%20(1).png" alt="Final solution mockups" class="full-width-image" />
+              <div class="principle-item card-style">
+                <h4>Component System</h4>
+                <p>Reusable buttons, cards, and form elements maintain consistency across 15+ screens.</p>
               </div>
             </div>
           </div>
-     
+
+          <div class="design-subsection">
+            <h3 class="subsection-heading">Accessibility Implementation</h3>
+            <div class="highlight-box accessibility-details">
+              <p><strong>Our accessibility audit ensured inclusive design from day one:</strong></p>
+              <ul>
+                <li><strong>Color & Contrast:</strong> Body text achieves AAA standard (≈7:1 ratio), UI elements meet AA minimum (≥4.5:1). Palette tested for colorblind accessibility using Figma plugins.</li>
+                <li><strong>Operability:</strong> Mobile tap targets minimum 60px (42px absolute minimum), clear focus states for keyboard navigation, logical tab order throughout.</li>
+                <li><strong>Content Structure:</strong> Meaningful alt text for images, proper heading hierarchy (H1-H3), labeled form controls for screen readers.</li>
+                <li><strong>Communication Options:</strong> Text, audio, and video messaging support different accessibility needs and preferences.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-section content-section">
+          <div class="section-heading">
+            <span class="section-number">08</span>
+            <h2>The Solution & Key Features</h2>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <h4>Anonymous-first Asking</h4>
+              <p><strong>Why:</strong> lowers social risk and hesitation to start.</p>
+              <p><strong>How:</strong> draft privately with suggested tags; reveal identity later if desired; invite experts into a private thread.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Trust & Availability Signals</h4>
+              <p><strong>Why:</strong> students need to judge credibility and responsiveness at a glance.</p>
+              <p><strong>How:</strong> course/topic tags, ratings/endorsements, recent activity, response rate, and clear “online/available” states.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Dual-mode Help</h4>
+              <p><strong>Why:</strong> supports both quick unblock and deep mentoring.</p>
+              <p><strong>How:</strong> lightweight async Q&A + scheduled 1:1 sessions with integrated availability and booking.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Text + Voice</h4>
+              <p><strong>Why:</strong> complex issues are easier to explain verbally for many students.</p>
+              <p><strong>How:</strong> voice notes and optional voice calls for private threads and 1:1 messaging.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Reputation & Incentives</h4>
+              <p><strong>Why:</strong> sustained expert participation needs recognition and light incentives.</p>
+              <p><strong>How:</strong> points/badges, profile highlights, and optional programmatic credit recognition where applicable.</p>
+            </div>
+          </div>
+          
+          <div class="design-subsection">
+            <h3 class="subsection-heading">Final Design</h3>
+            <p>
+              The high-fidelity prototype integrates these decisions into a clean, supportive flow from asking to resolution, emphasizing trust, speed, and safety.
+            </p>
+            <div class="design-image-container solution-images">
+              <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2cc44e4036d68161e20a2_Group%20211%20(1).png" alt="Final solution mockups" class="full-width-image" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="reflection-section content-section">
+          <div class="section-heading">
+            <span class="section-number">09</span>
+            <h2>Reflection & Next Steps</h2>
+          </div>
+          <div class="section-content">
+            <h3 class="subsection-heading">What I Learned</h3>
+            <p>
+              Evidence-to-decision mapping kept the team aligned and prevented us from shipping “nice-to-have” features. Prioritizing psychological safety early paid off in clearer flows and stronger adoption intent in feedback.
+            </p>
+
+            <h3 class="subsection-heading">Evaluation Plan</h3>
+            <div class="evaluation-plan">
+              <p>Two rounds of validation will guide iteration:</p>
+              <ol>
+                <li><strong>Round 1 (qual):</strong> 6 participants (2×BSc/2×MSc/2×PhD) perform core tasks on the hi-fi prototype; capture behavioral notes and post-task ratings.</li>
+                <li><strong>Round 2 (task-based):</strong> measure task success, time on task, and SUS/CSAT after iteration; refine trust signals and scheduling affordances.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
   </div>
 </DetailPostLayout>
 
 <style>
+/* —— 只作用在本页容器上的主题变量 —— */
+.agora-content {
+  /* 亮色（卡片底 & 边框） */
 
-  /* Hero section styles */
-  .hero-container {
-    margin-bottom: 4rem;
-  }
+  --surface-border: rgba(17, 24, 39, 0.16); /* 比 #ececec 对比更足 */
+}
+
+html.theme-dark .agora-content,
+:root.theme-dark .agora-content {
+  /* 暗色 */
+  --surface-bg: rgba(255, 255, 255, 0.05);
+  --surface-border: rgba(255, 255, 255, 0.14);
+}
+
+/* 为了万一别处又覆盖了变量，再给“发丝线”一刀切 */
+.agora-content .card-style,
+.agora-content .detail-card,
+.agora-content .stat-item,
+.agora-content .goals-list,
+.agora-content .participant-breakdown,
+.agora-content .insight-card,
+.agora-content .persona-card,
+.agora-content .goals-card,
+.agora-content .feature-item,
+.agora-content .design-image-container,
+.agora-content .analysis-image {
+  background-color: var(--surface-bg);
+  border: 1px solid var(--surface-border, #d0d7de) !important; /* 带后备值 */
+  /* 如果仍觉得太淡，可以补一条“伪边框”，和 border 叠加更清晰： */
+  box-shadow: inset 0 0 0 1px var(--surface-border, #d0d7de);
+}
+
+/* 4. 同时应用到章节分割线 */
+.agora-content .section-heading {
+    border-bottom-color: var(--card-border) !important;
+}
   
-  .hero-image-wrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    max-height: 550px; /* 可以根据需要调整这个值 */
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* 确保图片填满容器 */
-  }
-  
-  
-  /* Section heading styles */
-  .section-heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    padding-bottom: 1rem;
-  }
-  
-  .section-number {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color-accent);
-    margin-right: 1rem;
-    opacity: 0.8;
-  }
-  
-  .section-heading h2 {
-    margin: 0;
-    font-size: 1.8rem;
-    color: var(--color-text);
-  }
-  
-  /* Subsection heading styles */
-  .subsection-heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
+  p {
+    line-height: 1.7;
+    color: var(--text-color-secondary);
     margin-bottom: 1.5rem;
-    color: var(--color-text);
   }
-  
-  /* Info cards styles */
-  .info-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 3rem 0 4rem;
-  }
-  
-  .info-card {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 1.5rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  
-  .card-icon {
-    color: var(--color-accent);
-    margin-bottom: 1rem;
-  }
-  
-  .info-card h4 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-  
-  .info-card p {
-    margin: 0;
-  }
-  
-  /* Research goals styles */
-  .research-goals {
-    margin-bottom: 3rem;
-  }
-  
-  .goals-list {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 1.5rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .goal-item {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  
-  .goal-item:last-child {
+  p:last-child {
     margin-bottom: 0;
   }
-  
-  .goal-number {
-    font-weight: bold;
-    margin-right: 1rem;
-    color: var(--color-accent);
-    flex-shrink: 0;
-  }
-  
-  .goal-item p {
-    margin: 0;
-  }
-  
-  /* Research method styles */
-  .research-method {
-    margin-bottom: 3rem;
-  }
-  
-  /* Data analysis styles */
-  .analysis-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  /* User groups highlight */
-  .user-groups-highlight {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-left: 3px solid var(--color-accent);
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border-radius: 0 8px 8px 0;
-  }
-  
-  .user-groups-highlight p {
-    margin: 0;
-    font-style: italic;
-  }
-  
-  /* Personas styles */
-  .personas-intro {
-    margin-bottom: 2rem;
-  }
-  
-  .personas-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .persona-card {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  
-  .persona-card-header {
-    background-color: var(--color-accent);
-    padding: 0.5rem 1rem;
-    text-align: center;
-  }
-  
-  .persona-type {
-    color: white;
-    font-weight: bold;
-  }
-  
-  .persona-card-body {
-    padding: 1rem;
-  }
-  
-  .persona-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Goals section styles */
-  .goals-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  
-  .goals-card {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 1.5rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .goals-card h4 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: var(--color-accent);
-  }
-  
-  .goals-card ul {
-    margin: 0;
-    padding-left: 1.5rem;
-  }
-  
-  .goals-card li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Design section styles */
-  .design-subsection {
-    margin-bottom: 4rem;
-  }
-  
-  .design-image-container {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  /* Accessibility text styles */
-  .accessibility-text {
-    display: flex;
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .accessibility-icon {
-    margin-right: 1.5rem;
-    color: var(--color-accent);
-    flex-shrink: 0;
-  }
-  
-  .accessibility-content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Image styles */
   .full-width-image {
     width: 100%;
     height: auto;
     display: block;
   }
-  
-  /* Spacing between sections */
-  .overview-section,
-  .research-section,
-  .insight-section,
-  .user-groups-section,
-  .personas-section,
-  .goals-section,
-  .conceptual-model-section,
-  .design-section {
+
+  /* --- Section Spacing & Headings --- */
+  .content-section {
     margin-top: 5rem;
   }
-  
-  
-  /* Content spacing */
-  p {
+  .section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--surface-border);
+    padding-bottom: 1rem;
+  }
+  .section-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    opacity: 0.8;
+  }
+  .section-heading h2 {
+    margin: 0;
+    font-size: 2rem; /* Increased size for better hierarchy */
+    color: var(--text-color);
+  }
+  .subsection-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    color: var(--text-color);
+  }
+  .subsection-heading:first-child {
+      margin-top: 0;
+  }
+
+  /* --- Reusable Components --- */
+  /* A consistent card style for multiple elements */
+  .card-style {
+    background-color: var(--surface-bg);
+    border: 1px solid var(--surface-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  /* A consistent highlight box style */
+  .highlight-box {
+    background-color: var(--surface-bg);
+    border-left: 3px solid var(--accent-color);
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .highlight-box p { margin: 0; }
+
+  /* --- Hero & Project Details --- */
+  .hero-container {
+    margin-bottom: 4rem;
+  }
+  .hero-image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 600px;
+    border: 1px solid var(--surface-border);
+  }
+  .hero-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .project-details-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .detail-card {
+    background-color: var(--surface-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--surface-border);
+  }
+  .detail-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: var(--accent-color);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .detail-card p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .detail-sub {
+      opacity: 0.8;
+      margin-top: 0.25rem !important;
   }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .info-cards,
-    .personas-cards,
-    .goals-cards {
-      grid-template-columns: 1fr;
-    }
-    
+  /* --- 01. Problem & Stats --- */
+  .problem-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .stat-item {
+    background-color: var(--surface-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--surface-border);
+  }
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1.2;
+  }
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+  }
+
+  /* --- 02. Research Methodology --- */
+  .goals-list {
+    background-color: var(--surface-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--surface-border);
+  }
+  .goal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .goal-item:last-child { margin-bottom: 0; }
+  .goal-number {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+  }
+  .goal-item p { margin: 0; }
+
+.method-text p {
+  margin-bottom: 1.5rem !important; /* 确保每个段落都有下边距 */
+}
+.method-text p:last-child {
+  margin-bottom: 0 !important; /* 最后一个段落不需要 */
+}
+  /* NEW: two-column layout for method description */
+  .method-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .participant-breakdown h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  .participant-breakdown ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style-type: '— ';
+  }
+   .participant-breakdown li {
+       margin-bottom: 0.5rem;
+   }
+
+.analysis-container {
+  display: grid;
+  /* 将 grid-template-columns 从 1fr 1fr 改回 1fr 1.5fr，给图片更多空间 */
+  grid-template-columns: 1fr 1.5fr; 
+  gap: 2.5rem;
+  align-items: center;
+}
+  .analysis-image {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--surface-border);
+  }
+  /* 确保分析流程图能自适应容器大小 */
+.analysis-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* --- 更精确的子模块间距控制 --- */
+
+/* 1. 给所有 h3 子标题一个统一的大上边距 */
+.research-section .subsection-heading {
+  margin-top: 4rem;
+}
+
+/* 2. 但，紧跟在章节主标题 (02...) 下方的第一个子模块，我们给一个较小的上边距，让它离主标题更近一些 */
+.research-section .research-goals {
+    margin-top: 2.5rem;
+}
+
+/* 3. 同时，因为边距已经加在了容器上，所以第一个 h3 标题就不再需要上边距了 */
+.research-section .research-goals .subsection-heading {
+    margin-top: 0;
+}
+  /* --- 03. Insights --- */
+  .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .insight-card {
+    background-color: var(--surface-bg);
+    border: 1px solid var(--surface-border);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 0 0 12px 12px;
+    padding: 1.5rem;
+  }
+  .insight-card h4 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: var(--text-color);
+  }
+  .insight-content {
+      margin-top: 3rem;
+  }
+
+  /* --- 04. User Archetypes --- */
+  .user-groups-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .user-group h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  .user-group ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .user-group li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* --- 05. Personas --- */
+  .personas-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .persona-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--surface-border);
+  }
+  .persona-image {
+    display: block;
+    width: 100%;
+  }
+
+  /* --- 06. Design Goals --- */
+  .goals-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .goals-card {
+    background-color: var(--surface-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--surface-border);
+  }
+  .goals-card h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  .goals-card ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  .goals-card li { margin-bottom: 0.75rem; }
+
+  .metrics-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+  }
+  .metric-item {
+      background-color: var(--surface-bg);
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid var(--surface-border);
+      font-size: 0.9rem;
+  }
+  .metric-label {
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-right: 0.5rem;
+  }
+
+  /* --- 07. Design Process --- */
+  .design-subsection {
+    margin-bottom: 4rem;
+  }
+  .design-subsection:last-child {
+      margin-bottom: 0;
+  }
+  .design-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--surface-border);
+    margin-top: 2rem;
+  }
+  .design-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .principle-item h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--accent-color);
+  }
+  .accessibility-details ul {
+    margin: 1rem 0 0 0;
+    padding-left: 1.2rem;
+  }
+  .accessibility-details li { margin-bottom: 0.5rem; }
+
+  /* --- 08. Solution & Features --- */
+  /* REVISED: responsive grid for features */
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .feature-item {
+    background-color: var(--surface-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--surface-border);
+  }
+  .feature-item h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+  }
+  .feature-item p { font-size: 0.95rem; }
+
+  /* --- 09. Reflection --- */
+  .evaluation-plan ol {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  .evaluation-plan li { margin-bottom: 0.75rem; }
+
+  /* --- Responsive Adjustments --- */
+  @media (max-width: 992px) {
     .analysis-container {
       grid-template-columns: 1fr;
     }
-    
-    .section-heading {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .section-number {
-      margin-bottom: 0.5rem;
-    }
-    
-    .accessibility-text {
-      flex-direction: column;
-    }
-    
-    .accessibility-icon {
-      margin-bottom: 1rem;
+    .method-details-grid {
+        grid-template-columns: 1fr;
     }
   }
+
+  @media (max-width: 768px) {
+    .personas-cards,
+    .goals-cards,
+    .user-groups-comparison {
+      grid-template-columns: 1fr;
+    }
+    .section-heading {
+      align-items: flex-start;
+    }
+    .section-heading h2 { font-size: 1.8rem; }
+  }
+/* —— 统一圆角，避免各处半径不一致 —— */
+.agora-content { --radius-card: 12px; }
+
+/* ① 增加 “Proposed Success Metrics” 之前的垂直间距 */
+.goals-cards { margin-bottom: 2rem; }           /* 卡片组与后面内容拉开 */
+.success-metrics { margin-top: 2rem; }          /* 再加一层保险 */
+.metrics-grid { margin-top: 0.75rem; }          /* 标题和小标签之间留气口 */
+
+/* ② 修复 hero 图片与边框不对齐（圆角、边框统一由外层控制） */
+.hero-image-wrapper {
+  border-radius: var(--radius-card);
+  overflow: hidden;                              /* 裁剪图片四角 */
+  background-color: var(--surface-bg);
+  /* 用“发丝线”描边，更干净，避免1px抖动 */
+  border: none;
+  box-shadow: inset 0 0 0 1px var(--surface-border);
+}
+.hero-image {
+  display: block;                                 /* 消除img默认行内缝隙 */
+  width: 100%;
+  height: auto;
+  border-radius: inherit;                         /* 图片圆角与外层一致 */
+  /* 某些浏览器亚像素缩放会露白，下面两句可进一步稳住像素对齐 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* 如果你还有别的“卡片容器”，也统一下圆角（可选） */
+.card-style,
+.detail-card,
+.stat-item,
+.goals-list,
+.participant-breakdown,
+.insight-card,
+.persona-card,
+.goals-card,
+.feature-item,
+.design-image-container,
+.analysis-image {
+  border-radius: var(--radius-card);
+}
+
 </style>
