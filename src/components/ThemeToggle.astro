@@ -37,6 +37,7 @@ import Icon from './Icon.astro';
       const button = this.querySelector('button');
       if (!button) return;
 
+      /** @param {boolean} dark */
       const setTheme = (dark) => {
         document.documentElement.classList.toggle('theme-dark', !!dark);
         button.setAttribute('aria-pressed', String(!!dark));
@@ -48,14 +49,11 @@ import Icon from './Icon.astro';
         setTheme(!isDark);
       });
 
-      // 初始化（优先 localStorage，其次现有类名）
       let stored = null;
       try { stored = localStorage.getItem('theme'); } catch {}
       const initial = stored ? stored === 'dark' : document.documentElement.classList.contains('theme-dark');
       setTheme(initial);
     }
   }
-  if (!customElements.get('theme-toggle')) {
-    customElements.define('theme-toggle', ThemeToggle);
-  }
+  if (!customElements.get('theme-toggle')) customElements.define('theme-toggle', ThemeToggle);
 </script>
