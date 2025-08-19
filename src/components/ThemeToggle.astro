@@ -37,23 +37,31 @@ import Icon from './Icon.astro';
       const button = this.querySelector('button');
       if (!button) return;
 
-      /** @param {boolean} dark */
-      const setTheme = (dark) => {
-        document.documentElement.classList.toggle('theme-dark', !!dark);
-        button.setAttribute('aria-pressed', String(!!dark));
-        try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch {}
+      // 读取初始状态（优先 localStorage）
+      let isDark = document.documentElement.classList.contains('theme-dark');
+      try {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark') isDark = true;
+        if (stored === 'light') isDark = false;
+      } catch {}
+
+      const applyTheme = () => {
+        document.documentElement.classList.toggle('theme-dark', isDark);
+        button.setAttribute('aria-pressed', String(isDark));
+        try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch {}
       };
 
       button.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.contains('theme-dark');
-        setTheme(!isDark);
+        isDark = !isDark;
+        applyTheme();
       });
 
-      let stored = null;
-      try { stored = localStorage.getItem('theme'); } catch {}
-      const initial = stored ? stored === 'dark' : document.documentElement.classList.contains('theme-dark');
-      setTheme(initial);
+      applyTheme();
     }
   }
-  if (!customElements.get('theme-toggle')) customElements.define('theme-toggle', ThemeToggle);
+
+  if (!customElements.get('theme-toggle')) {
+    customElements.define('theme-toggle', ThemeToggle);
+  }
 </script>
+

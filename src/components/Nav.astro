@@ -48,7 +48,9 @@ const isActive = (href = "") =>
 						</li>
 					))}
 				</ul>
-			<ThemeToggle class="theme-toggle" style="transform:scale(0.75)" client:load />
+				<div class="theme-toggle" style="transform:scale(0.75)">
+					<ThemeToggle />
+				</div>
 			</div>
 			<NavMobile/>
 		</div>
@@ -135,8 +137,7 @@ const isActive = (href = "") =>
 	.social{ display:flex; padding:var(--icon-padding); text-decoration:none; color:var(--accent-dark); transition: color var(--theme-transition); }
 	.social:hover,.social:focus{ color:var(--accent-text-over); }
 
-	.theme-toggle{ display:flex; align-items:center; height: calc(var(--icon-size) + 2 * var(--icon-padding));pointer-events: none; }
-	.theme-toggle :global(button) { pointer-events: auto; }
+	.theme-toggle{ display:flex; align-items:center; height: calc(var(--icon-size) + 2 * var(--icon-padding)); }
 	.languages{ display:flex; align-items:center; height: calc(var(--icon-size) + 2 * var(--icon-padding)); }
 
 	@media (min-width: 60em) {
