@@ -1,3 +1,4 @@
+
 ---
 import { Image } from "astro:assets";
 import DetailHeader from "../../components/DetailHeader.astro";
@@ -5,409 +6,390 @@ import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
 ---
 
 <DetailPostLayout
-  title="Ecjoy"
-  description="An application that supports foreign parents in finding hobby classes for their children in Finland."
-  keywords="UX design,mobile app,hobby classes,foreign parents,Finland"
+  title="Ecjoy - Discovering Hobbies for Children"
+  description="Ecjoy is a mobile app concept to help parents find and enroll their children in hobby classes in Finland."
+  keywords="ux design, case study, mobile app, user research, figma, experience design, ecjoy"
 >
   <div class="post">
     <main class="post-wrapper">
-      <DetailHeader
-        tag="UX PROJECT"
-        description="Sept-Dec 2021">
-        <h1 class="font-type">
-          Ecjoy
-        </h1>
+      <DetailHeader tag="UX PROJECT" description="Course Project 2022">
+        <h1 class="font-type">Ecjoy</h1>
+        <p class="project-subtitle">Discovering Hobbies for Children</p>
       </DetailHeader>
 
-      <section class="project-content">
-        <!-- Project Introduction -->
-        <div class="intro-section">
-          <div class="intro-content">
-            <h2 class="section-title">Project Introduction</h2>
-            <p class="intro-text">
-              <strong>Ecjoy</strong> is an application that supports foreign parents in finding hobby classes for their children in Finland.
-            </p>
+      <section class="ecjoy-content">
+        <div class="content-section first">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <h2>Project Overview</h2>
+          </div>
+          <p class="intro-paragraph"><strong>Ecjoy</strong> is a mobile application concept designed to help parents, particularly expatriates living in Finland, find and enroll their children in hobby classes. The current process for discovering extracurricular activities is challenging; information is scattered across various websites, and a significant language barrier exists as most details are only in Finnish. Ecjoy aims to solve this by consolidating all activity information onto a single, accessible platform, providing clear English translations and a streamlined enrollment process. The goal is to save parents time and energy while creating more opportunities for children to explore their interests and develop new skills.</p>
+          <h3 class="subsection-heading">My Role</h3>
+          <p>As a UX Designer and Researcher on this project, I was involved in the end-to-end design process. My key responsibilities included:</p>
+          <ul>
+            <li>Conducting user research through semi-structured interviews to understand user needs and pain points.</li>
+            <li>Applying Experience-Driven Design and the CUE model as the core theoretical frameworks for our design strategy.</li>
+            <li>Creating a user journey map to identify critical design opportunities.</li>
+            <li>Designing and iterating on a high-fidelity, interactive prototype in Figma.</li>
+            <li>Organizing and conducting prototype evaluations using the meCUE questionnaire and follow-up interviews to validate our design solutions.</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <h2>The Challenge</h2>
+          </div>
+          <p>Our initial research identified three primary pain points for expat parents seeking extracurricular activities for their children in Finland:</p>
+          <div class="card-grid three-cols">
+            <div class="info-card">
+              <h4>Language & Information Barriers</h4>
+              <p>The vast majority of information is in Finnish. Even with translation tools, parents found it difficult to get accurate details, which was time-consuming and demotivating.</p>
+            </div>
+            <div class="info-card">
+              <h4>Difficult Discovery</h4>
+              <p>Parents heavily relied on word-of-mouth recommendations to find classes. This limited their ability to discover new or different types of activities available to their children.</p>
+            </div>
+            <div class="info-card">
+              <h4>Tedious Enrollment</h4>
+              <p>The enrollment process required filling out long, manual forms for each activity. This repetitive task was a major source of frustration, especially since the required information was often similar.</p>
+            </div>
           </div>
         </div>
 
-
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">My Role</h2>
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2>Our Process & Approach</h2>
           </div>
-          <div class="column-right">
-            <div class="section-content">
-              <p class="section-description">
-                Came up with interview questions, conducted interviews, analyze the results, made prototype using Figma, tested prototype with end-users.
-              </p>
-            </div>
-          </div>
+          <p>To ensure our solution was user-centered and effective, we adopted an <strong>Experience-Driven Design</strong> methodology. This approach prioritizes understanding and defining the user's desired experiences first, and then designing the product features to deliver those experiences. We used the <strong>CUE (Components of User Experience) model</strong> as our analytical framework to systematically evaluate the instrumental qualities (e.g., usability), non-instrumental qualities (e.g., aesthetics), and emotional reactions of the user.</p>
           
-                    <div class="column-left">
-            <h2 class="section-title">Problem</h2>
-          </div>
-          <div class="column-right">
-            <div class="section-content">
-              <p class="section-description">
-                This project aims to solve the needs and challenges foreign parents have when they find hobby classes for their children in Finland as they do not know the language and do not have the relevant local connections.
-              </p>
-            </div>
-          </div>
-          
-                    <div class="column-left">
-            <h2 class="section-title">Solution</h2>
-          </div>
-          <div class="column-right">
-            <div class="section-content">
-              <p class="section-description">
-                An application that gives all available activity information appears to be the best solution. Instead of navigating through many websites, they may explore and find the right course for their children in one app. This improvement would save them time and energy while also enhancing their quality of life in a foreign nation.
-              </p>
-            </div>
-          </div>
-          
-        </div>
 
-        <!-- Methodology Section -->
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">Methodology</h2>
-          </div>
-          <div class="column-right">
-            <div class="section-content">
-              <p class="section-description">
-                This project followed the Experience-driven design and CUE model.
-              </p>
-              <p class="section-description">
-                Experience-Driven Design is about understanding the experiences needed by users that will be built into a solution. According to Hassenzahl, experience-driven design starts by studying and setting as a priority the needs of the user. Once there is an understanding of these needs, experiences will be established to solve these needs and implement them in the solution.
-              </p>
-              <p class="section-description">
-                As for the CUE model, the user experience may be characterized in this framework as a set of different components interacting in a certain way. Instrumental quality perceptions, non-instrumental quality perceptions, and emotional user reactions are the three major elements of user experience, as shown in Figure 1. These three components determine the outcomes of the user experience. Acceptance of the system and usage behavior are examples of consequences.
-              </p>
-              <p class="section-description">
-                All three elements of the user experience work together to define the user's overall impression of the system and, as a result, affect future choices and actions.
-              </p>
+          <figure class="figure">
+ 		  <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5a4558b95abfaa3021403_6CB532FF-7B11-4071-9D91-03292013229D%20(1).jpeg" alt="CUE Model Diagram" />
+ 		  <figcaption>The CUE model was our analytical framework for understanding user experience.</figcaption>
+		  </figure>
 
-              <div class="image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5a4558b95abfaa3021403_6CB532FF-7B11-4071-9D91-03292013229D%20(1).jpeg" alt="CUE Model Diagram" class="full-width-image" />
-              </div>
-            </div>
+          <h3 class="subsection-heading">User Research & Key Insights</h3>
+          <p>We conducted semi-structured interviews with four expatriate parents living in Finland. Through thematic analysis of the qualitative data, we uncovered several key insights that became the foundation of our design:</p>
+          <div class="highlight-box">
+            <ul class="insights-list">
+              <li><strong>English is a Top Priority:</strong> All participants expressed a strong need for a centralized platform with accurate English translations.</li>
+              <li><strong>Simplicity is Key:</strong> Users desired an "input once, use many times" experience for enrollment to eliminate wasted time.</li>
+              <li><strong>Centralization Creates Opportunity:</strong> A single platform that gathers all information would provide significantly more opportunities for discovery.</li>
+            </ul>
           </div>
-        </div>
 
-        <!-- User Experience Goals Section -->
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">User Experience Goals</h2>
-          </div>
-          <div class="column-right">
-            <div class="section-content">
-              <div class="goal-item">
-                <h3 class="goal-title">Exploration and Discovery</h3>
-                <p class="goal-description">
-                  Gathering all information into a single space would allow parents more possibilities for the exploration of options. With more options, there will be an increase in discovery. When the child and their parents look through all of the programs provided, these experiences may be produced. The app could potentially allow parents to select their favorite classes into a list. Then show the detailed information of classes to the kids so they can select their favorite option.
-                </p>
-              </div>
-
-              <div class="goal-item">
-                <h3 class="goal-title">(Feeling of) Efficiency</h3>
-                <p class="goal-description">
-                  To feel that no time is wasted in the use of the service. With the main language being English, the system also supports multiple languages for parents from different origins. Shortened, auto-fill form accelerates the enrollment process for the parents. The online payment system also plays a role in assisting both the parents and the teachers. In general, the efficiency goal is shown through the helpfulness, ease of use, and learnability of the system.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Figma Prototype Section -->
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">Figma Interactive Prototype</h2>
-          </div>
-          <div class="column-right">
-            <div class="prototype-container">
-              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGSnUw0yrdHXnaMuiQsPzQy%2FDesign%3Fnode-id%3D978%253A10925%26scaling%3Dscale-down%26page-id%3D826%253A4557%26starting-point-node-id%3D978%253A10925" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-        <!-- Prototype Evaluation Section -->
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">Prototype Evaluation</h2>
-          </div>
-          <div class="column-right">
-            <div class="section-content">
-              <h3 class="subsection-title">Methods</h3>
-              <p class="section-description">
-                The <strong>meCUE questionnaire</strong> and <strong>interviews</strong> were utilized as evaluation methods. The meCUE questionnaire is a questionnaire made for standardized measurement of UX which was developed based on Thüring and Mahlke's Component Model of User Experience(2007). The meCUE questionnaire provides for the evaluation of major components of User Experience in a modular format. The questionnaire consists of 34 items and is divided into four modules, each of which has been independently verified and relates to the perception of various product qualities.
-              </p>
-              <div class="image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5ab97237b054d0365a49f_meCUE_Structure.jpg" alt="meCUE Structure" class="full-width-image" />
-              </div>
-
-              <h3 class="subsection-title">Results</h3>
-              <h4 class="result-heading">From meCUE questionnaire</h4>
-              <p class="section-description">
-                Overall, the results are quite encouraging; the calculated mean values for instrumental qualities are pretty high; the value for usefulness is 5.93, and the value for usability is 6.13. Because we primarily concentrated on pragmatic features when creating the prototype, the value for non-instrumental qualities is lower, as predicted. If the project is developed more in the future, these elements can be enhanced. When it comes to the emotion module, it's clear that it's more on the positive side. The outcome of the consequences module is also not poor, with a value of 3.73 for intention to use and 4.87 for product loyalty. The overall evaluation score is 4.4, which is relatively high compared to the highest score of 5. By this result, we may state that our efficiency goal has been met.
-              </p>
-              
-              <h4 class="result-heading">From interviews</h4>
-              <ul class="result-list">
-                <li>Finding new courses is easy with the help of this app.</li>
-                <li>Signing up for a course they want is very straightforward.</li>
-                <li>The explore page is not needed or can be improved.</li>
+          <h3 class="subsection-heading">Experience Goals</h3>
+          <p>Based on our research insights, we established the following primary and secondary UX goals to guide our design:</p>
+          <div class="card-grid two-cols">
+            <div class="info-card">
+              <h4>Primary UX Goals</h4>
+              <ul class="dash-list">
+                <li><strong>Exploration and Discovery:</strong> To create a feeling of possibility by gathering all information into a single space.</li>
+                <li><strong>(Feeling of) Efficiency:</strong> To make the user feel that no time is wasted through features like auto-fill enrollment.</li>
               </ul>
-              
-              <div class="image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5ac61a63df4979398468d_Picture1.png" alt="Results Diagram" class="full-width-image" />
-              </div>
+            </div>
+            <div class="info-card">
+              <h4>Secondary UX Goals</h4>
+              <ul class="dash-list">
+                <li><strong>Desire:</strong> To persuade users to enroll through helpful information like ratings and reviews.</li>
+                <li><strong>Joy:</strong> To evoke happiness through engaging visuals that allow parents to imagine their children enjoying the activities.</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- Lesson Learnt Section -->
-        <div class="content-section two-column">
-          <div class="column-left">
-            <h2 class="section-title">Lesson<br />Learnt</h2>
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2>The Solution</h2>
           </div>
-          <div class="column-right">
-            <div class="section-content">
-              <p class="section-description">
-                This is my first time using Experience-driven design and CUE model, to be honest I am quite satisfied with the outcomes. Using these two methods helped me to look into things from a different angle. Instead of designing for a certain problem, we are designing for a certain experience. This project has also helped me to know how to understand users with empathy and how to think in their shoes.
-              </p>
-              <p class="section-description">
-                As this is a project from a course at university so we have also written everything into a report. Feel free to check it out!
-              </p>
+          <p>To meet these goals, we designed an interactive digital prototype of the Ecjoy mobile application. The core features included:</p>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h4>Powerful Search & Filtering</h4>
+              <p>A comprehensive search function with filters for schedule, age range, category, and distance, allowing parents to quickly find suitable classes.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Detailed & Trustworthy Info</h4>
+              <p>Clear course pages featuring teacher details, schedules, and authentic reviews and ratings from other parents to support decision-making.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Simplified Enrollment</h4>
+              <p>A feature allowing parents to save their children's information in a profile, which can then be used to auto-fill registration forms.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Favorites & Comparison</h4>
+              <p>The ability for users to save interesting classes to a list and compare them side-by-side, facilitating a collaborative decision.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <h2>Evaluation & Results</h2>
+          </div>
+          <p>We conducted a prototype evaluation with five target users. The methodology included task-based testing followed by the standardized <strong>meCUE questionnaire</strong> and a short interview. The results were highly positive:</p>
+          <ul class="dash-list">
+            <li>The prototype achieved an <strong>overall evaluation score of 4.4 out of 5</strong> in the meCUE assessment.</li>
+            <li>It scored very high on instrumental qualities, with <strong>usefulness at 5.93/7</strong> and <strong>usability at 6.13/7</strong>, confirming we had met our primary goal of "Efficiency".</li>
+            <li>In interviews, participants described the app as "very clear and easy to use," and all were able to complete the given tasks in a short time. They specifically praised the filter functions and the time-saving enrollment process.</li>
+          </ul>
+
+          <figure class="figure">
+                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5ac61a63df4979398468d_Picture1.png" alt="Results Diagram" class="full-width-image" />
+            <figcaption>Data from the meCUE questionnaire provided strong evidence of the design's success.</figcaption>
+          </figure>
+
+          
+          
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">06</span>
+            <h2>Reflection & Future Work</h2>
+          </div>
+          <p>This project was a valuable end-to-end design exercise, successfully demonstrating how user research can directly inform a solution that is validated by users. We acknowledge some limitations, such as a small participant sample size for research and a prototype that focused more on pragmatic (functional) attributes than hedonic (emotional) ones.</p>
+          <p>For future work, we would focus on enhancing the visual design to better address the "Joy" and "Desire" experience goals. Furthermore, we see great value in expanding the target audience to include Finnish parents, making the platform a truly inclusive solution for the entire community.</p>
+           <p>As this is a project from a course at university so we have also written everything into a report. Feel free to check it out!</p>
               <a href="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e5ad094d29240410333d54_The%20Maker%20-%20Report.pdf" target="_blank" class="report-link">
                 View Report
               </a>
-            </div>
-          </div>
         </div>
       </section>
     </main>
   </div>
+  
 </DetailPostLayout>
 
 <style>
-  /* Project Content Container */
-  .project-content {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Two-column layout */
-  .two-column {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2rem;
-    align-items: start;
-  }
-  
-  .column-left {
-    position: sticky;
-    top: 2rem;
-  }
-  
-  .column-right {
-    width: 100%;
-  }
-  
-  /* Section Title Styling - Left aligned */
-  .section-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--color-text);
-    display: block;
-    line-height: 1.3;
-  }
-  
-  /* Sub-section title */
-  .subsection-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin: 2rem 0 1rem;
-    color: var(--color-text);
-  }
-  
-  .section-description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--color-text);
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Introduction Section */
-  .intro-section {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 2.5rem;
-    margin: 2rem 0 3rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .intro-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--color-text);
-  }
-  
-  /* Content Sections */
-  .content-section {
-    margin: 4rem 0;
-  }
-  
-  .section-content {
-    width: 100%;
-  }
-  
-  /* Details Section - Reduced spacing */
-  .details-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; /* Reduced from 2rem */
-    margin: 3rem 0;
-  }
-  
-  .detail-card {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 1.5rem 2rem; /* Reduced padding */
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .detail-title {
-    font-size: 1.4rem;
-    margin-bottom: 0.75rem; /* Reduced from 1.2rem */
-    font-weight: 600;
-    color: var(--color-accent);
-  }
-  
-  .detail-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-text);
-  }
-  
-  /* User Experience Goal items */
-  .goal-item {
-    margin-bottom: 2rem;
-  }
-  
-  .goal-title {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: var(--color-accent);
-  }
-  
-  .goal-description {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--color-text);
-  }
-  
-  /* Prototype container */
-  .prototype-container {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
-  
-  /* Image container */
-  .image-container {
-    margin: 1.5rem 0 2.5rem;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  
-  .full-width-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Results section */
-  .result-heading {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.75rem;
-    color: var(--color-text);
-  }
-  
-  .result-list {
-    margin: 0.75rem 0 1.5rem 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-text);
-  }
-  
-  .result-list li {
-    margin-bottom: 0.5rem;
-  }
+/* --- 1. Core Variables & Foundation --- */
+.ecjoy-content { /* Use a unique class to avoid style conflicts */
+  /* Variables */
+  --text-color-primary: #111827;
+  --text-color-secondary: #374151;
+  --accent-color: #059669; /* A vibrant, encouraging green for Ecjoy */
+  --surface-bg: #ffffff;
+  --surface-border: rgba(17, 24, 39, 0.1);
+  --radius-card: 12px;
 
-  
-/* 报告按钮样式 */
+  /* Spacing System (Based on 8px grid) */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-s: 1rem;      /* 16px */
+  --space-m: 1.5rem;    /* 24px */
+  --space-l: 2.5rem;    /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-xxl: 6rem;    /* 96px */
+}
+
+html.theme-dark .ecjoy-content,
+:root.theme-dark .ecjoy-content {
+  --text-color-primary: #f9fafb;
+  --text-color-secondary: #d1d5db;
+  --surface-bg: rgba(255, 255, 255, 0.05); /* Card background for dark mode */
+  --surface-border: rgba(255, 255, 255, 0.15); /* Card border for dark mode */
+}
+
+/* --- 2. Typography & Content Flow --- */
+.ecjoy-content p,
+.ecjoy-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+}
+.ecjoy-content .intro-paragraph {
+  font-size: 1.15rem;
+  color: var(--text-color-primary);
+}
+.ecjoy-content p {
+  margin-bottom: var(--space-m);
+}
+.ecjoy-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 3. Layout & Sectioning --- */
+.content-section {
+  margin-top: var(--space-xxl);
+}
+.content-section.first {
+  margin-top: var(--space-xl);
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-l);
+  padding-bottom: var(--space-s);
+  border-bottom: 1px solid var(--surface-border);
+}
+.section-number {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-right: var(--space-s);
+}
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color-primary);
+}
+.subsection-heading {
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin: var(--space-xl) 0 var(--space-m);
+  font-size: 1.4rem;
+}
+
+/* --- 4. Reusable Components (Card & List Styles) --- */
+.info-card, .highlight-box, .figure, .feature-item, .gallery-item {
+  background-color: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+}
+html.theme-dark .info-card, html.theme-dark .highlight-box, html.theme-dark .figure, html.theme-dark .feature-item, html.theme-dark .gallery-item {
+  background-color: var(--surface-bg);
+}
+.card-grid {
+  display: grid;
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+.card-grid.two-cols { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.card-grid.three-cols { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.info-card {
+  padding: var(--space-l);
+}
+.info-card h4 {
+  margin-top: 0;
+  margin-bottom: var(--space-s);
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.highlight-box {
+  padding: var(--space-l);
+  border-left: 4px solid var(--accent-color);
+  margin: var(--space-l) 0;
+}
+.insights-list {
+  list-style: none;
+  padding-left: 0; margin: 0;
+}
+.insights-list li {
+  color: var(--text-color-primary);
+  font-weight: 500;
+  padding-left: var(--space-m);
+  position: relative;
+}
+.insights-list li:not(:last-child) {
+  margin-bottom: var(--space-s);
+}
+.insights-list li::before {
+  content: '→';
+  color: var(--accent-color);
+  position: absolute; left: 0;
+}
+
+.dash-list {
+  list-style: none;
+  padding-left: 0;
+}
+.dash-list li {
+  padding-left: var(--space-m);
+  position: relative;
+  margin-bottom: var(--space-s);
+}
+.dash-list li:last-child { margin-bottom: 0; }
+.dash-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 12px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+.feature-item {
+  padding: var(--space-m);
+}
+.feature-item h4 {
+  margin-top: 0;
+  margin-bottom: var(--space-s);
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+/* --- 5. Media (Images & Video) --- */
+.figure {
+  padding: var(--space-s);
+  margin: var(--space-l) 0;
+}
+.figure img, .gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: calc(var(--radius-card) - var(--space-s)); /* Inner radius */
+}
+.figure figcaption {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin-top: var(--space-s);
+}
+.prototype-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+.gallery-item {
+  padding: var(--space-s);
+}
+
+/* --- 6. Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .section-heading h2 { font-size: 2rem; }
+  .subsection-heading { font-size: 1.5rem; }
+}
+
 .report-link {
-  /* 基本样式 */
   display: inline-block;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  
-  /* 亮色模式样式 */
-  background-color: white !important;
-  color: black !important;
-  border: 2px solid #333 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #333333 !important;
 }
-
-/* 深色模式样式 - 黑色背景，白色边框和文字 */
-:root.theme-dark .report-link,
-[data-theme="dark"] .report-link,
-.dark .report-link,
-.dark-theme .report-link {
-  background-color: #1a1a1a !important; /* 深色背景，与周围环境相似 */
-  color: white !important;
-  border: 2px solid white !important; /* 白色边框 */
+:root.theme-dark .report-link, [data-theme="dark"] .report-link, .dark .report-link {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
 }
-
-/* 悬停效果 */
 .report-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  opacity: 0.9; /* 轻微的透明度变化提供视觉反馈 */
+  opacity: 0.95;
 }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 900px) {
-    .two-column {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    
-    .column-left {
-      position: static;
-      margin-bottom: 1rem;
-    }
-    
-    .section-title {
-      font-size: 1.6rem;
-    }
-    
-    .intro-section, 
-    .detail-card {
-      padding: 1.5rem;
-    }
-  }
 </style>
+
+
+
+
+

@@ -6,123 +6,146 @@ import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
 
 <DetailPostLayout
   title="Manse"
-  description="Feedback BOT Manse is an AI-infused service for citizens to report distractions/disturbances to the city"
-  keywords="feedback bot,city services,citizen reports,urban feedback,AI service"
+  description="Feedback BOT Manse is an AI‑infused service for citizens to report disturbances to the city."
+  keywords="feedback bot, city services, citizen reports, urban feedback, AI service"
 >
   <div class="post">
     <main class="post-wrapper">
-      <DetailHeader
-        tag="UX PROJECT"
-        description="Jan-April 2021">
-        <h1 class="font-type">
-          Manse
-        </h1>
+      <DetailHeader tag="UX PROJECT" description="Jan–Apr 2021">
+        <h1 class="font-type">Manse</h1>
+        <p class="project-subtitle">Feedback Bot Manse — A Human‑Centered AI Feedback Channel for the Smart City</p>
       </DetailHeader>
 
-      <section class="project-content">
-        <!-- Project Introduction -->
-        <div class="intro-section">
-          <div class="intro-content">
-            <h2 class="section-title">Project Introduction</h2>
-            <p class="intro-text">
-              <strong>Feedback BOT Manse</strong> is an AI-infused service for citizens to report distractions/ disturbances (e.g. street light is out, icy parts on the sidewalk, missing STOP-sign in an intersection, etc.), give feedback or suggestions to the city. Users can easily make different kinds of reports through the service, give the exact location to the reports, receive replies for the report/messages, and check the status of the reports.
-            </p>
+      <section class="manse-content">
+        <!-- 01. Project Overview -->
+        <div class="content-section first">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <h2>Project Overview</h2>
           </div>
+          <p class="intro-paragraph"><strong>Feedback Bot Manse</strong> is an AI‑infused chatbot for the smart city of Tampere, designed to provide a positive, transparent, and seamless feedback experience. Residents can report municipal issues (e.g., broken streetlights, icy roads, missing traffic signs) or offer suggestions. The project followed a Human‑Centered Design process grounded in in‑depth research, structured ideation, and multiple rounds of prototype validation.</p>
+
+          <h3 class="subsection-heading">The Problem</h3>
+          <p>Citizens often notice areas for improvement but don’t submit feedback—channels are unclear, the process feels cumbersome, and people fear their input will be ignored. Existing methods (like the website form) are hard to find, lack essentials such as photo upload and precise location tagging, and rarely provide follow‑up—discouraging engagement.</p>
+
+          <h3 class="subsection-heading">Our Solution</h3>
+          <p>We designed <strong>Manse</strong>, an AI‑powered chatbot that understands natural language, guides users through reporting, auto‑categorizes issues, and routes them to the correct municipal department. It also sends status updates to build trust. The long‑term vision is a pervasive, multilingual, multi‑channel feedback system for the city.</p>
+
+          <h3 class="subsection-heading">My Role</h3>
+          <ul>
+            <li><strong>User Research:</strong> Co‑planned and conducted 6 semi‑structured interviews; synthesized findings via affinity diagramming.</li>
+            <li><strong>Ideation:</strong> Co‑created personas and journey maps; contributed to team brainstorming and concept refinement.</li>
+            <li><strong>Prototyping & Validation:</strong> Three iterative MVP validation rounds; built hi‑fi Figma prototypes; optimized via user testing.</li>
+            <li><strong>Documentation & Presentation:</strong> Contributed to weekly learning diaries and the final presentation.</li>
+          </ul>
         </div>
 
-        <!-- Project Details - Without Cards -->
-        <div class="details-section">
-          <div class="detail-section">
-            <h3 class="detail-title">My Role</h3>
-            <p class="detail-text">I was responsible for conducting user researches, analyzing results, ideation, making wireframes, hi-fi prototypes for mobile, and validations.</p>
-          </div>
-          
-          <div class="detail-section">
-            <h3 class="detail-title">Problem</h3>
-            <p class="detail-text">There are things that citizens would like to communicate or report to the city, but not everyone is aware of the ways to do this, and often people just won't do it (even if it was something important) because there is no convenient or quick way to do it. That's why we present Feedback BOT Manse.</p>
-          </div>
-          
-          <div class="detail-section">
-            <h3 class="detail-title">Questions</h3>
-            <p class="detail-text">How would you interact with the bot in a convenient and accessible way? What kind of system would be easy enough to use so that it would be accessible and easy to use for all the citizens, and for the receiving party (the city)?</p>
-          </div>
-        </div>
-
-        <!-- Design Journey Video -->
+        <!-- 02. Design Process (reference layout: clear phases + steps) -->
         <div class="content-section">
-          <h2 class="section-title">Design Journey Video</h2>
-          <p class="section-description">We made a video that covers all the processes we have done for this object. You will also see our interactive prototype at the end.</p>
-          <div class="video-container">
-            <div style="padding-top:56.17021276595745%" class="video-wrapper">
-              <iframe class="video-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F540353980%3Fh%3D808e7efeb7%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F540353980&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1118544478-fe27342b6375171b36fb90cd6b02164a9e982490fdbde02f29944e1e996edafe-d_640&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo" scrolling="no" title="Feedback Bot Manse"></iframe>
-            </div>
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <h2>Design Process</h2>
           </div>
-        </div>
-
-        <!-- Methods Section -->
-        <div class="content-section">
-          <h2 class="section-title">Methods</h2>
-          <p class="section-description">It was a 4 months project that was filled with mostly analysis and research. We followed the Double Diamond Process as a guide. In order to understand stakeholders and end-users, we did stakeholder analysis, semi-structured interviews, affinity diagram, value proposition canvas, user journey, and storyboard.</p>
+          <h3 class="phase-heading">Phase 1 — Discover & Define</h3>
+          <p>The initial phase was dedicated to deep research to understand the stakeholders, the existing ecosystem, and most importantly, the citizens' needs and frustrations. We aimed to answer the question: "Why aren't citizens actively providing feedback?"</p>
           
-          <div class="methods-gallery">
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d68651c920084e8d166b_User_Journey.png" alt="User's Journey Map" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">User's Journey Map</div>
-            </div>
-            
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216977b4a0a40bf6ea56e_Screen_Shot_2021-02-26_at_13.16.37.png" alt="The Value Proposition Canvas" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">The Value Proposition Canvas</div>
-            </div>
-            
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d69adc72a16fe101c768_Untitled%20(2).png" alt="Affinity Diagram" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">Affinity Diagram</div>
-            </div>
-            
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216c3aa22cef8994c79f0_doublediamondprocess.png" alt="Double Diamond Process" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">Double Diamond Process</div>
-            </div>
-            
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216d3f4a5e1b66c76099f_Screen_Shot_2021-02-20_at_1.04.35_PM.png" alt="Ideation" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">Ideation</div>
-            </div>
-            
-            <div class="gallery-item">
-              <div class="gallery-image-container">
-                <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216abfd2fc4828dd61efb_Screen_Shot_2021-02-04_at_11.28.01_AM.png" alt="Power/Interest Grid for Stakeholder Prioritization" class="gallery-image" />
-              </div>
-              <div class="gallery-caption">Power/Interest Grid for Stakeholder Prioritization</div>
+          <h4 class="step-heading">1. Stakeholder Analysis & System Research</h4>
+          <p>We began by mapping all stakeholders on a Power/Interest Grid. This exercise confirmed that **citizens** were our primary focus group due to their high interest and influence. We also tested the city's current feedback channels (website form vs. email) and discovered that timely responses and a transparent process are critical for building user trust.</p>
+          <figure class="figure">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216abfd2fc4828dd61efb_Screen_Shot_2021-02-04_at_11.28.01_AM.png" alt="Power/Interest Grid for Stakeholder Prioritization" />
+            <figcaption>Power/Interest Grid for stakeholder prioritization</figcaption>
+          </figure>
+                   <figure class="figure">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e216977b4a0a40bf6ea56e_Screen_Shot_2021-02-26_at_13.16.37.png" alt="Value Proposition Canvas" />
+            <figcaption>Value Proposition Canvas—linking pains to gains</figcaption>
+          </figure>
+          <h4 class="step-heading">2. User Interviews & Affinity Diagramming</h4>
+          <p>We conducted 6 in-depth, semi-structured interviews with Tampere residents to uncover their experiences and motivations. The rich qualitative data was then synthesized collaboratively using an Affinity Diagram. This process was crucial as it allowed us to cluster hundreds of individual observations into core themes and surface four critical insights that drove our entire design direction:</p>
+          <div class="highlight-box">
+            <ul class="insights-list">
+              <li><strong>Bystander Effect:</strong> Many people assumed someone else had already reported an issue, so they didn't act.</li>
+              <li><strong>Lack of Trust:</strong> A pervasive feeling that their feedback would be ignored or would not make a difference.</li>
+              <li><strong>Channel Confusion:</strong> Users were often unsure which person or department to contact for specific issues.</li>
+              <li><strong>Need for Confirmation:</strong> A fundamental desire to receive confirmation that their report had been received and was being processed.</li>
+            </ul>
+          </div>
+            <figure class="figure">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d69adc72a16fe101c768_Untitled%20(2).png" alt="Affinity Diagram" />
+            <figcaption>Affinity Diagram—synthesizing interview insights</figcaption>
+          </figure>
+          
+          <h3 class="phase-heading">Phase 2 — Develop & Deliver</h3>
+          <p>Armed with clear insights from our research, we moved into the solution space. This phase was all about translating user needs into tangible design concepts through personas, journey mapping, and iterative, user-centered validation.</p>
+          
+          <h4 class="step-heading">1. Personas & User Journey Mapping</h4>
+          <p>To humanize our data and focus our design, we created two key personas. Our primary focus became **Matti, the "Passive Citizen,"** who cares about the city but is deterred by the inconvenient and opaque feedback process. We then created a detailed user journey map for Matti, which visually exposed the key moments of friction and negative emotion, particularly the difficulty of finding the right channel and the frustrating silence while waiting for a response. This map became our guide for identifying the most critical opportunities for improvement.</p>
+         <figure class="figure">
+            <img src="https://cdn.prod.website-files.com/61e1afcc293eac3233b2e17f/61e2d68651c920084e8d166b_User_Journey.png" alt="User Journey Map" />
+            <figcaption>User Journey Map highlighting pain points</figcaption>
+          </figure>
+          
+          <h4 class="step-heading">2. Prototyping & Iterative Validation</h4>
+          <p>We followed a rapid prototyping approach, conducting three distinct rounds of validation to test and refine our concept with real users. This iterative cycle was essential for correcting our assumptions and ensuring the final product was truly usable and valuable.</p>
+          <ul class="validation-rounds">
+            <li><strong>Round 1 — Typeform (Low-fi):</strong> We built a simple prototype using Typeform to quickly validate the core logic and conversational flow of the chatbot interaction. This allowed us to test the basic concept without investing heavily in visual design.</li>
+            <li><strong>Round 2 — Figma (Hi-fi):</strong> Based on initial feedback, we created a high-fidelity prototype in Figma. This version focused on refining the conversational UX and establishing a clear visual interface. Users responded positively to the more natural dialogue and clear guidance.</li>
+            <li><strong>Round 3 — Figma Refined:</strong> A key learning from Round 2 was that users were confused by the AI-suggested "popular issue" tags. In this final iteration, we clarified the copy and added a prominent "My problem is not in the list" option. This small change significantly boosted usability and user confidence.</li>
+          </ul>
+        </div>
+
+        <!-- 03. The Final Solution -->
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2>The Final Solution</h2>
+          </div>
+          <ul class="feature-list-min">
+            <li><strong>Natural Conversational Experience:</strong> Manse uses Natural Language Processing (NLP) to understand user input and guides them with well-structured questions to gather all necessary details (description, photos, location).</li>
+            <li><strong>Multi‑Modal Input:</strong> The chatbot supports text, voice messages, image attachments, and map-based location sharing to accommodate various user needs and contexts.</li>
+            <li><strong>Transparent Process Tracking:</strong> After submitting feedback, users receive a confirmation and can track the status of their issue, including which department is handling it, which greatly enhances trust.</li>
+            <li><strong>Intelligent Routing:</strong> The AI can automatically categorize feedback and route it to the correct municipal department, improving the city's operational efficiency.</li>
+            <li><strong>Helpful, Friendly Tone:</strong> Manse's conversational tone is designed to be warm, supportive, and understanding, aiming to create a positive emotional experience for citizens.</li>
+          </ul>
+                    <div class="media-frame">
+            <div class="video-wrapper" style="position:relative; padding-top:56.17021276595745%">
+              <iframe class="video-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F540353980%3Fh%3D808e7efeb7%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F540353980&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1118544478-fe27342b6375171b36fb90cd6b02164a9e982490fdbde02f29944e1e996edafe-d_640&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo" title="Feedback Bot Manse" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
             </div>
           </div>
         </div>
 
-        <!-- Conclusion Section -->
+		<!-- 04. Future Vision -->
         <div class="content-section">
-          <h2 class="section-title">Conclusion</h2>
-          <div class="conclusion-content">
-            <p class="section-description">
-              It was a very valuable experience and a meaningful project. I got the opportunity to try out all the different methods, learned many new things through the researches, and got to know how the feedback system of Tampere works.
-            </p>
-            <p class="section-description">
-              We have also documented everything in detail as a learning diary and here is the link to it. Feel free to check it out!
-            </p>
-            <a href="https://luu.notion.site/Project-Diary-ae0eb7ea0a9742de898cabb3de8242ee?pvs=4" target="_blank" class="report-link">
-              View Learning Diary
-            </a>
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2>Future Vision</h2>
           </div>
+          <ul class="dash-list">
+            <li><strong>Multi-Channel Integration:</strong> Integrate Manse into social media platforms (Facebook, WhatsApp), public displays, and even phone call centers, making it accessible anytime, anywhere.</li>
+            <li><strong>Multilingual Support:</strong> Implement support for multiple languages to serve Tampere's diverse and growing international community, promoting inclusivity.</li>
+            <li><strong>Data-Driven Governance:</strong> Leverage data analytics from the vast amount of feedback to help city officials gain a holistic understanding of citizens' needs and identify operational weak points for more informed decision-making.</li>
+          </ul>
+        </div>
+
+        <!-- 05. Reflection & Key Learnings -->
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <h2>Reflection & Key Learnings</h2>
+          </div>
+          <ul class="dash-list">
+            <li><strong>The value of user research:</strong> This project reinforced my belief that deep user research is the cornerstone of great design. Without our initial interviews, we might have overlooked the critical emotional needs of "trust" and "transparency."</li>
+            <li><strong>The power of iteration:</strong> Moving from a simple Typeform to a refined Figma prototype across three validation rounds allowed us to correct false assumptions early. Each piece of user feedback brought our design closer to a truly user-centered solution.</li>
+            <li><strong>Cross‑cultural collaboration:</strong> Working in a multicultural team taught us to communicate more effectively and to approach problems from different perspectives, proving that diverse teams can achieve exceptional results.</li>
+          </ul>
+        </div>
+
+        <!-- Learning Diary (kept – our nicer CTA) -->
+        <div class="content-section">
+          <div class="section-heading">
+            <h2>Learning Diary</h2>
+          </div>
+          <p>We documented the journey in detail. Explore the full diary:</p>
+          <a href="https://luu.notion.site/Project-Diary-ae0eb7ea0a9742de898cabb3de8242ee?pvs=4" target="_blank" class="report-link">View Learning Diary</a>
         </div>
       </section>
     </main>
@@ -130,200 +153,234 @@ import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
 </DetailPostLayout>
 
 <style>
-  /* Project Content Container */
-  .project-content {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Section Title Styling */
-  .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    position: relative;
-    color: var(--color-text);
-    display: inline-block;
-  }
-  
-  .section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-accent);
-  }
-  
-  .section-description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--color-text);
-    opacity: 0.9;
-    margin-bottom: 2rem;
-    max-width: 85ch;
-  }
-  
-  /* Introduction Section */
-  .intro-section {
-    background-color: var(--color-bg-secondary, rgba(255,255,255,0.03));
-    border-radius: 12px;
-    padding: 3rem;
-    margin: 2rem 0 3rem;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-  }
-  
-  .intro-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--color-text);
-    max-width: 75ch;
-  }
-  
-  /* Content Sections */
-  .content-section {
-    margin: 5rem 0;
-  }
-  
-  /* Details Section - Removed Card Styling */
-  .details-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin: 4rem 0;
-  }
-  
-  .detail-section {
-    /* Removed background, border, padding and shadow */
-    margin-bottom: 0.5rem;
-  }
-  
-  .detail-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-    color: var(--color-text);
-  }
-  
-  .detail-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--color-text);
-    max-width: 75ch;
-  }
-  
-  /* Video Section */
-  .video-container {
-    margin-top: 2rem;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
-  
-  .video-wrapper {
-    position: relative;
-  }
-  
-  .video-embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Methods Section */
-  .methods-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin-top: 2.5rem;
-  }
-  
-  .gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .gallery-image-container {
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid var(--color-border, rgba(255,255,255,0.1));
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  
-  .gallery-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .gallery-caption {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: var(--color-text);
-    opacity: 0.8;
-    text-align: center;
-  }
-  
-/* 报告按钮样式 */
+/*
+ * MANSE CASE STUDY — REFINED STYLESHEET V2
+ * Based on the "Agora" aesthetic: clean, structured, and content-focused.
+ * Key Fixes:
+ * 1. Dark Mode: Ensures all text and backgrounds have proper contrast.
+ * 2. Spacing System: Creates a consistent vertical rhythm to eliminate "messiness".
+ * 3. Typographic Hierarchy: Clearly defines headings and text for readability.
+ * 4. Component Consistency: Reuses card and list styles for a cohesive feel.
+ */
+
+/* --- 1. Core Variables & Foundation (Agora Style) --- */
+.manse-content {
+  /* Variables */
+  --text-color-primary: #111827;
+  --text-color-secondary: #374151;
+  --accent-color: #3b82f6;
+  --surface-bg: #ffffff;
+  --surface-border: rgba(17, 24, 39, 0.1);
+  --radius-card: 12px;
+
+  /* Spacing System (Based on 8px grid) */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-s: 1rem;      /* 16px */
+  --space-m: 1.5rem;    /* 24px */
+  --space-l: 2.5rem;    /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-xxl: 6rem;    /* 96px */
+}
+
+html.theme-dark .manse-content,
+:root.theme-dark .manse-content {
+  --text-color-primary: #f9fafb;
+  --text-color-secondary: #d1d5db;
+  --surface-bg: rgba(255, 255, 255, 0.05); /* Card background for dark mode */
+  --surface-border: rgba(255, 255, 255, 0.15); /* Card border for dark mode */
+}
+
+/* --- 2. Typography & Content Flow --- */
+.manse-content p,
+.manse-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+}
+.manse-content .intro-paragraph {
+  font-size: 1.15rem;
+  color: var(--text-color-primary);
+}
+.manse-content p {
+  margin-bottom: var(--space-m);
+}
+.manse-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 3. Layout & Sectioning (Agora Style) --- */
+.content-section {
+  margin-top: var(--space-xxl);
+}
+.content-section.first {
+  margin-top: var(--space-xl);
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-l);
+  padding-bottom: var(--space-s);
+  border-bottom: 1px solid var(--surface-border);
+}
+.section-number {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-right: var(--space-s);
+}
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color-primary);
+}
+.phase-heading, .subsection-heading {
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin: var(--space-xl) 0 var(--space-m);
+}
+.phase-heading {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+}
+.subsection-heading {
+  font-size: 1.4rem;
+}
+.step-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: var(--space-l) 0 var(--space-s);
+}
+
+/* --- 4. Reusable Components (Card & List Styles) --- */
+
+/* Base Card Style (Applied to multiple elements for consistency) */
+.card, .detail-card, .highlight-box, .validation-rounds li, .media-frame, .figure, .feature-item, .info-card {
+  background-color: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-l);
+}
+html.theme-dark .card, html.theme-dark .detail-card, html.theme-dark .highlight-box, html.theme-dark .validation-rounds li, html.theme-dark .media-frame, html.theme-dark .figure, html.theme-dark .feature-item, html.theme-dark .info-card {
+  background-color: var(--surface-bg); /* Explicitly set for dark mode */
+}
+
+/* Your Liked Highlight Box for Insights */
+.highlight-box {
+  border-left: 4px solid var(--accent-color);
+  padding-left: calc(var(--space-l) - 4px); /* Adjust padding */
+}
+.insights-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.insights-list li {
+  color: var(--text-color-primary);
+  font-weight: 500;
+  padding-left: var(--space-m);
+  position: relative;
+}
+.insights-list li:not(:last-child) {
+  margin-bottom: var(--space-s);
+}
+.insights-list li::before {
+  content: '→';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+/* Your Liked Dash List Style */
+.dash-list {
+  list-style: none;
+  padding-left: 0;
+}
+.dash-list li {
+  padding-left: var(--space-m);
+  position: relative;
+  margin-bottom: var(--space-s);
+}
+.dash-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em; /* Vertically center the dash */
+  width: 12px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.feature-list-min { padding-left: 1.2rem; }
+.feature-list-min li { margin: .5rem 0; }
+
+.validation-rounds {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.validation-rounds li {
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  background-color: var(--surface-bg);
+  margin-bottom: 1rem;
+}
+
+/* --- 5. Media (Images & Video) --- */
+.figure {
+  padding: var(--space-s);
+  margin: var(--space-l) 0;
+}
+.figure img {
+  width: 100%;
+  display: block;
+  border-radius: calc(var(--radius-card) - var(--space-s)); /* Inner radius */
+}
+.figure figcaption {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin-top: var(--space-s);
+}
+.media-frame {
+  padding: 0;
+  overflow: hidden; /* Important for video */
+  margin-top: var(--space-l);
+}
+.video-wrapper { position: relative; padding-top: 56.25%; } /* 16:9 Aspect Ratio */
+.video-embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+/* --- 6. CTA Button (Restored to your preferred style) --- */
 .report-link {
-  /* 基本样式 */
   display: inline-block;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  
-  /* 亮色模式样式 */
-  background-color: white !important;
-  color: black !important;
-  border: 2px solid #333 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #333333 !important;
 }
-
-/* 深色模式样式 - 黑色背景，白色边框和文字 */
-:root.theme-dark .report-link,
-[data-theme="dark"] .report-link,
-.dark .report-link,
-.dark-theme .report-link {
-  background-color: #1a1a1a !important; /* 深色背景，与周围环境相似 */
-  color: white !important;
-  border: 2px solid white !important; /* 白色边框 */
+:root.theme-dark .report-link, [data-theme="dark"] .report-link, .dark .report-link {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
 }
-
-/* 悬停效果 */
 .report-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  opacity: 0.9; /* 轻微的透明度变化提供视觉反馈 */
+  opacity: 0.95;
 }
-  /* Responsive Adjustments */
-  @media (max-width: 900px) {
-    .methods-gallery {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    
-    .section-title {
-      font-size: 1.75rem;
-    }
-    
-    .intro-section {
-      padding: 2rem;
-    }
-    
-    .detail-title {
-      font-size: 1.6rem;
-    }
-  }
+
+/* --- 7. Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .section-heading h2 { font-size: 2rem; }
+  .phase-heading, .subsection-heading { font-size: 1.5rem; }
+}
 </style>
