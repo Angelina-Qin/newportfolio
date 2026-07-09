@@ -1,0 +1,206 @@
+---
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+
+// All stickers load automatically from the folders.
+const set1 = Object.entries(
+  import.meta.glob<ImageMetadata>("../../assets/projects/stickers/set1/*.png", { eager: true, import: "default" })
+).sort(([a], [b]) => a.localeCompare(b)).map(([, img]) => img);
+
+const set2 = Object.entries(
+  import.meta.glob<ImageMetadata>("../../assets/projects/stickers/set2/*.png", { eager: true, import: "default" })
+).sort(([a], [b]) => a.localeCompare(b)).map(([, img]) => img);
+
+const drafts = Object.entries(
+  import.meta.glob<ImageMetadata>("../../assets/projects/stickers/drafts/*.png", { eager: true, import: "default" })
+).sort(([a], [b]) => a.localeCompare(b)).map(([, img]) => img);
+
+// WeChat Sticker Gallery listings
+const wechatSet1 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emoticonview?oper=single&t=shop/detail&productid=aL2PCfwK/89qO7sF6/+I+UDhfwEjhec2ZNvdnLLJRd/Nuf5S2WRvTc8TTswwBGNT6C9ci2qK9f+KSUeLJrkotR38/7Gje79/T5suKF1nhmnM=";
+const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emoticonview?oper=single&t=shop/detail&productid=aL2PCfwK/89qO7sF6/+I+UDhfwEjhec2ZNvdnLLJRd/NPWm27O0rEOdcY0HwZztcb0AxAlg5B8ym0E52Kdas0QMciDudNC0/CKJQrgPQr60E=";
+---
+
+<DetailPostLayout
+  title="Ben the Otter: Sticker Design"
+  description="An original character sticker series, developed through AI-assisted design and published on the WeChat Sticker Gallery."
+  keywords="illustration, character design, sticker design, WeChat stickers, otter, AI-assisted design, digital emotion, visual design"
+>
+  <div class="post">
+    <main class="post-wrapper">
+      <DetailHeader
+        tag="ILLUSTRATION & CHARACTER DESIGN"
+        description="Personal project · Published 2026">
+        <h1 class="font-type">
+          Ben the Otter
+        </h1>
+      </DetailHeader>
+
+      <section class="stickers-content">
+
+        <div class="overview-section">
+          <div class="section-heading"><span class="section-number">01</span><h2>Concept</h2></div>
+          <div class="section-content">
+            <p>This project sits at the meeting point of a personal love and a research interest. I have always adored otters. The way they hold hands while they sleep so they don't drift apart has stayed with me as one of the most quietly tender things in nature, and <strong>Ben</strong> grew out of that affection: a warm, wide-eyed otter whose whole personality lives in his face.</p>
+            <p>The research interest is closer to my academic work. My PhD centres on <strong>emojis and stickers</strong>, specifically how they shape people's attention and emotion in everyday communication. Studying that literature made me appreciate just how much emotional weight these tiny images carry in a conversation, and I wanted to move from analysing them to actually designing one. Ben is that experiment: a small, expressive vocabulary of reactions, each built to read instantly at thumbnail size and land a clear feeling, from pure delight to dramatic despair.</p>
+            <p>I developed Ben across <strong>two sticker sets</strong>, each exploring a slightly different drawing style. The first is cleaner and rounder, the second looser and more frazzled, while keeping the character recognisably the same across both.</p>
+          </div>
+        </div>
+
+        <div class="process-section">
+          <div class="section-heading"><span class="section-number">02</span><h2>How Ben Evolved</h2></div>
+          <div class="section-content">
+            <p>Ben went through many rounds of iteration before he settled into the character you see now. I directed the design using <strong>AI image-generation tools (Jimeng AI)</strong>, treating the process the way I would art-direct any illustrator: generating options, then refining his proportions, expression, line weight, and overall feel across version after version until he was consistent and genuinely likeable. The early drafts below show him as a simple line otter, before he grew his warmth, colour, and range of expressions.</p>
+            {drafts.length > 0 && (
+              <div class="drafts-row">
+                {drafts.map((img, i) => (
+                  <figure class="draft-figure">
+                    <Image src={img} alt={`Early draft of Ben the Otter, version ${i + 1}`} loading="lazy" />
+                    <figcaption>Early draft {i + 1}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div class="artwork-section">
+          <div class="section-heading"><span class="section-number">03</span><h2>The Artwork</h2></div>
+
+          <div class="set-block">
+            <div class="set-label">
+              <h3 class="subsection-heading">Set One: “Ben”</h3>
+              <a class="wechat-btn" href={wechatSet1} target="_blank" rel="noopener">View on WeChat ↗</a>
+            </div>
+            <div class="sticker-grid">
+              {set1.map((img, i) => (
+                <div class="sticker-tile">
+                  <Image src={img} alt={`Ben the Otter sticker, set one, expression ${i + 1}`} loading={i < 6 ? "eager" : "lazy"} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="set-block">
+            <div class="set-label">
+              <h3 class="subsection-heading">Set Two: “Ben's Joy, Anger, Sorrow and Happiness”</h3>
+              <a class="wechat-btn" href={wechatSet2} target="_blank" rel="noopener">View on WeChat ↗</a>
+            </div>
+            <div class="sticker-grid">
+              {set2.map((img, i) => (
+                <div class="sticker-tile">
+                  <Image src={img} alt={`Ben the Otter sticker, set two, expression ${i + 1}`} loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="shipped-section">
+          <div class="section-heading"><span class="section-number">04</span><h2>Shipped on WeChat</h2></div>
+          <div class="section-content">
+            <p>Both sets went through WeChat's official sticker submission and review process and are now <strong>live on the WeChat Sticker Gallery</strong>, available for anyone on the platform to download and send in their own conversations. Taking the character from sketch to a published, real-world product, meeting the platform's technical specs and passing review, was as much a part of the project as the drawing itself.</p>
+            <div class="shipped-cards">
+              <a class="shipped-card" href={wechatSet1} target="_blank" rel="noopener">
+                <h4>Ben</h4>
+                <p>{set1.length} stickers · 60 downloads on WeChat</p>
+                <span class="shipped-link">Open in WeChat Sticker Gallery ↗</span>
+              </a>
+              <a class="shipped-card" href={wechatSet2} target="_blank" rel="noopener">
+                <h4>Ben's Joy, Anger, Sorrow and Happiness</h4>
+                <p>{set2.length} stickers · 33 downloads on WeChat</p>
+                <span class="shipped-link">Open in WeChat Sticker Gallery ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="reflection-section">
+          <div class="section-heading"><span class="section-number">05</span><h2>Reflection</h2></div>
+          <div class="section-content">
+            <div class="reflection-highlight">
+              <p>Designing Ben let me approach my own research subject from the other side of the screen, as a maker rather than an analyst of how stickers carry emotion.</p>
+            </div>
+            <p>Stickers are a deceptively hard design problem: a tiny canvas, no words, and a split second to land a feeling. Building a consistent character across many expressions, directing it through modern AI tools, and shipping it through a real platform's review process brought together visual design, product thinking, and a hands-on feel for the very medium I study. It is a small project, but it keeps me close to the emotional texture of the communication my research is about.</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</DetailPostLayout>
+
+<style>
+  .stickers-content { max-width: 1000px; margin: 0 auto; }
+
+  .section-heading { display: flex; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--color-border, rgba(127,127,127,0.15)); padding-bottom: 1rem; }
+  .section-number { font-size: 1.5rem; font-weight: bold; color: var(--color-accent); margin-right: 1rem; opacity: 0.8; }
+  .section-heading h2 { margin: 0; font-size: 1.8rem; color: var(--color-text); }
+  .overview-section, .process-section, .artwork-section, .shipped-section, .reflection-section { margin-top: 5rem; }
+
+  .drafts-row { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; }
+  .draft-figure {
+    margin: 0; flex: 1 1 220px; max-width: 300px; text-align: center;
+    background: var(--color-bg-secondary, rgba(127,127,127,0.06));
+    border: 1px solid var(--color-border, rgba(127,127,127,0.12));
+    border-radius: 14px; padding: 1rem;
+  }
+  .draft-figure img { width: 100%; height: auto; display: block; border-radius: 8px; background: #fff; }
+  .draft-figure figcaption { margin-top: .75rem; font-size: .85rem; font-style: italic; color: var(--color-text-secondary); }
+  .section-content p { margin-bottom: 1.5rem; line-height: 1.7; }
+  .section-content strong { color: var(--color-accent); }
+
+  .set-block { margin-bottom: 3.5rem; }
+  .set-label { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .subsection-heading { font-size: 1.35rem; font-weight: 600; margin: 0; color: var(--color-text); }
+
+  .wechat-btn {
+    display: inline-block; padding: .4rem .9rem; border-radius: 999px;
+    border: 1px solid var(--color-accent); color: var(--color-accent);
+    text-decoration: none; font-size: .9rem; white-space: nowrap;
+  }
+  .wechat-btn:hover { background: var(--color-accent); color: var(--color-bg); }
+
+  .sticker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .sticker-tile {
+    aspect-ratio: 1 / 1;
+    display: flex; align-items: center; justify-content: center;
+    padding: .6rem;
+    background: #ffffff;
+    border: 1px solid var(--color-border, rgba(127,127,127,0.12));
+    border-radius: 14px;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .sticker-tile:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+  .sticker-tile img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+  .shipped-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .shipped-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--color-bg-secondary, rgba(127,127,127,0.06));
+    border: 1px solid var(--color-border, rgba(127,127,127,0.12));
+    border-radius: 14px; padding: 1.5rem;
+    transition: transform .25s ease, border-color .25s ease;
+  }
+  .shipped-card:hover { transform: translateY(-4px); border-color: var(--color-accent); }
+  .shipped-card h4 { margin: 0 0 .5rem; color: var(--color-accent); }
+  .shipped-card p { margin: 0 0 1rem; color: var(--color-text-secondary); }
+  .shipped-link { font-size: .9rem; color: var(--color-accent); }
+
+  .reflection-highlight {
+    background: var(--color-bg-secondary, rgba(127,127,127,0.06));
+    border-left: 3px solid var(--color-accent);
+    padding: 1.5rem; margin: 0 0 2rem; border-radius: 0 8px 8px 0;
+  }
+  .reflection-highlight p { margin: 0; font-style: italic; }
+
+  @media (max-width: 768px) {
+    .section-heading { flex-direction: column; align-items: flex-start; }
+    .section-number { margin-bottom: .5rem; }
+    .sticker-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+  }
+</style>

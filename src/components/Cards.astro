@@ -4,11 +4,29 @@ import { filterItems } from '../data/content';
 ---
 
 <div class="projects-list">
+  <!-- 项目0 - Ben the Otter (Sticker Design) -->
+  <div class="project-row">
+    <div class="project-content left">
+      <div class="project-info">
+        <h2 class="project-title"><a href="/newportfolio/detail/stickers">Ben the Otter</a></h2>
+        <p class="project-desc">An original character sticker series. Two expressive sets, developed through AI-assisted design and published on the WeChat Sticker Gallery.</p>
+        <div class="project-tag">Illustration & Character Design</div>
+      </div>
+    </div>
+    <div class="project-media right">
+      <a href="/newportfolio/detail/stickers" class="project-link">
+        <div class="project-image">
+          <img src="/newportfolio/assets/cover/cover-stickers.png" alt="Ben the Otter, original sticker character design" />
+        </div>
+      </a>
+    </div>
+  </div>
+
   <!-- 项目1 - Natsu -->
   <div class="project-row reverse">
     <div class="project-content right">
       <div class="project-info">
-        <h2 class="project-title">Natsu</h2>
+        <h2 class="project-title"><a href="/newportfolio/detail/natsu">Natsu</a></h2>
         <p class="project-desc">A UX case study on transforming a restaurant's ordering tool, improving usability, and elevating the brand experience through user-centric design.</p>
         <div class="project-tag">Menu design</div>
       </div>
@@ -26,7 +44,7 @@ import { filterItems } from '../data/content';
   <div class="project-row">
     <div class="project-content left">
       <div class="project-info">
-        <h2 class="project-title">Agora</h2>
+        <h2 class="project-title"><a href="/newportfolio/detail/agora">Agora</a></h2>
         <p class="project-desc">A platform connecting students through shared academic interests and resources.</p>
         <div class="project-tag">UX/UI design</div>
       </div>
@@ -44,7 +62,7 @@ import { filterItems } from '../data/content';
   <div class="project-row reverse">
     <div class="project-content right">
       <div class="project-info">
-        <h2 class="project-title">Manse</h2>
+        <h2 class="project-title"><a href="/newportfolio/detail/manse">Manse</a></h2>
         <p class="project-desc">An intelligent feedback bot designed to enhance user experience through personalized interactions.</p>
         <div class="project-tag">UX/UI design</div>
       </div>
@@ -62,7 +80,7 @@ import { filterItems } from '../data/content';
   <div class="project-row">
     <div class="project-content left">
       <div class="project-info">
-        <h2 class="project-title">Ecjoy</h2>
+        <h2 class="project-title"><a href="/newportfolio/detail/ecjoy">Ecjoy</a></h2>
         <p class="project-desc">Discover and join your perfect hobby classes with a seamless, intuitive browsing experience.</p>
         <div class="project-tag">UI/UX design</div>
       </div>
@@ -80,7 +98,7 @@ import { filterItems } from '../data/content';
   <div class="project-row reverse">
     <div class="project-content right">
       <div class="project-info">
-        <h2 class="project-title">Buckethead</h2>
+        <h2 class="project-title"><a href="/newportfolio/detail/buckethead">Buckethead</a></h2>
         <p class="project-desc">A playful educational game that combines learning with fun interactive challenges.</p>
         <div class="project-tag">Game</div>
       </div>
@@ -98,16 +116,16 @@ import { filterItems } from '../data/content';
 <style>
   /* 优化的项目展示样式 */
   .projects-list {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .project-row {
     display: flex;
     align-items: center;
-    margin-bottom: 120px;
-    gap: 60px;
+    margin-bottom: 72px;
+    gap: 48px;
   }
 
   .project-row.reverse {
@@ -115,12 +133,12 @@ import { filterItems } from '../data/content';
   }
 
   .project-content {
-    flex: 0 0 40%;
-    padding: 0 20px;
+    flex: 0 0 50%;
+    padding: 0;
   }
 
   .project-media {
-    flex: 0 0 55%;
+    flex: 0 0 42%;
   }
 
   .project-image {
@@ -152,6 +170,18 @@ import { filterItems } from '../data/content';
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--color-100);
+  }
+
+  .project-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .project-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    opacity: 0.75;
   }
 
   .project-desc {

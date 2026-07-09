@@ -13,9 +13,9 @@ interface Nav {
 export const nav: Nav = {
     avatar: '/newportfolio/assets/author.png',
     items: [
-        { label: 'Portfolio', href: '/newportfolio/', target: '_self' },// target 为 '_blank' 打开新链接
-        { label: 'Research', href: '/newportfolio/research', target: '_self' },
-        { label: 'About', href: '/newportfolio/about', target: '_self' },
+        { label: 'About', href: '/newportfolio/#about', target: '_self' },
+        { label: 'Research', href: '/newportfolio/#research', target: '_self' },
+        { label: 'Work', href: '/newportfolio/#work', target: '_self' },
     ],
 };
 
@@ -30,15 +30,15 @@ interface SeoTdk {
 }
 // SEO TDK 首页
 export const homeTdk: SeoTdk = {
-    title: 'Moshi Qin',
-    description: 'Moshi',
-    keywords: 'Moshi'
+    title: 'Moshi Qin | PhD Researcher, Human-Computer Interaction',
+    description: 'Moshi Qin is a human-computer interaction researcher and designer studying how people interact through emojis, gaze, and gesture. Explore research, projects, and design work.',
+    keywords: 'Moshi Qin, HCI researcher, human-computer interaction, UX designer, Tampere University, emoji research'
 }
 // SEO TDK research
 export const researchTdk: SeoTdk = {
-    title: 'Moshi Qin - Research',
-    description: 'You can find more about my research here',
-    keywords: 'Moshi,research'
+    title: 'Moshi Qin | Research',
+    description: 'Research and publications by Moshi Qin in human-computer interaction, including emojis, gaze, mid-air gestures, and emotion regulation.',
+    keywords: 'Moshi Qin, HCI research, publications, emojis, gaze, gestural interaction, ADHD'
 }
 // SEO TDK about
 export const aboutTdk: SeoTdk = {
@@ -68,7 +68,7 @@ export const socialLinks = [
     },
     {
         name: 'Resume',
-        url: 'https://tuni-my.sharepoint.com/:b:/g/personal/moshi_qin_tuni_fi/EfAhavRDk51EnPu94mc-fbwBu5Zzbdp5P8ZlHcwVC8l0AA?e=Y5Tq4c',
+        url: '/newportfolio/assets/files/Moshi-Qin-CV.pdf',
         icon: `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M30.13 51.31h20a1.75 1.75 0 0 0 1.75-1.75v-5.12a11.067 11.067 0 0 0-4.4-8.832 9.977 9.977 0 1 0-14.713 0 11.08 11.08 0 0 0-4.387 8.832v5.12a1.75 1.75 0 0 0 1.75 1.75zm10-28.894a6.477 6.477 0 1 1-6.477 6.477 6.485 6.485 0 0 1 6.473-6.476zM31.88 44.44a7.576 7.576 0 0 1 3.87-6.594 9.857 9.857 0 0 0 8.754 0 7.56 7.56 0 0 1 3.876 6.594v3.37h-16.5z"/><path d="M112.654 4.75H15.346A1.75 1.75 0 0 0 13.6 6.5v115a1.75 1.75 0 0 0 1.75 1.75h97.308a1.75 1.75 0 0 0 1.75-1.75V6.5a1.75 1.75 0 0 0-1.754-1.75zm-1.75 115H17.1V8.25h93.8z"/><path d="M26.346 65.75h75.308a1.75 1.75 0 1 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 80.194h75.308a1.75 1.75 0 0 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 109.083h75.308a1.75 1.75 0 0 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM26.346 94.639h75.308a1.75 1.75 0 1 0 0-3.5H26.346a1.75 1.75 0 0 0 0 3.5zM64 22.417h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5zM64 36.861h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5zM64 51.306h37.654a1.75 1.75 0 0 0 0-3.5H64a1.75 1.75 0 0 0 0 3.5z"/></svg>`
     },
     {
@@ -108,7 +108,7 @@ interface PageDescription {
 }
 export const pageDescription: PageDescription = {
     index: 'Designing with purpose. Creating with passion. Driven by curiosity.',
-    research: 'Exploring with depth. Thinking with clarity. Fueled by inquiry.',
+    research: 'I study how people interact through sensing technologies such as mid-air gestures, gaze, and physiological signals, with a focus on emotion regulation and designing for children with ADHD.',
     about: 'Observing with empathy. Growing with resilience. Learning with humility.',
 //  project: "这是我的部分项目展示",
 }
