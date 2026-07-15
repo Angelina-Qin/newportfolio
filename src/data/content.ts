@@ -108,7 +108,7 @@ interface PageDescription {
 }
 export const pageDescription: PageDescription = {
     index: 'Designing with purpose. Creating with passion. Driven by curiosity.',
-    research: 'I study how people interact through sensing technologies such as mid-air gestures, gaze, and physiological signals, with a focus on emotion regulation and designing for children with ADHD.',
+    research: 'I study how people communicate and interact through everyday signals such as emojis, gaze, gesture, and physiological sensing, with an interest in emotion, self-regulation, and inclusive, human-centred design.',
     about: 'Observing with empathy. Growing with resilience. Learning with humility.',
 //  project: "这是我的部分项目展示",
 }
