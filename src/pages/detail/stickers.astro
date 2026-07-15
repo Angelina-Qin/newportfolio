@@ -2,8 +2,6 @@
 import { Image } from "astro:assets";
 import DetailHeader from "../../components/DetailHeader.astro";
 import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
-import wechatSet1Img from "../../assets/projects/stickers/wechat-set1.png";
-import wechatSet2Img from "../../assets/projects/stickers/wechat-set2.png";
 
 // All stickers load automatically from the folders.
 const set1 = Object.entries(
@@ -74,17 +72,12 @@ const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emotico
               <h3 class="subsection-heading">Set One: “Ben”</h3>
               <a class="wechat-btn" href={wechatSet1} target="_blank" rel="noopener">View on WeChat ↗</a>
             </div>
-            <div class="set-body">
-              <div class="sticker-grid">
-                {set1.map((img, i) => (
-                  <div class="sticker-tile">
-                    <Image src={img} alt={`Ben the Otter sticker, set one, expression ${i + 1}`} loading={i < 6 ? "eager" : "lazy"} />
-                  </div>
-                ))}
-              </div>
-              <a class="wechat-shot" href={wechatSet1} target="_blank" rel="noopener" aria-label="Ben sticker set on the WeChat Sticker Gallery">
-                <Image src={wechatSet1Img} alt="Ben sticker set live on the WeChat Sticker Gallery" loading="lazy" />
-              </a>
+            <div class="sticker-grid">
+              {set1.map((img, i) => (
+                <div class="sticker-tile">
+                  <Image src={img} alt={`Ben the Otter sticker, set one, expression ${i + 1}`} loading={i < 6 ? "eager" : "lazy"} />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -93,17 +86,12 @@ const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emotico
               <h3 class="subsection-heading">Set Two: “Ben's Joy, Anger, Sorrow and Happiness”</h3>
               <a class="wechat-btn" href={wechatSet2} target="_blank" rel="noopener">View on WeChat ↗</a>
             </div>
-            <div class="set-body">
-              <div class="sticker-grid">
-                {set2.map((img, i) => (
-                  <div class="sticker-tile">
-                    <Image src={img} alt={`Ben the Otter sticker, set two, expression ${i + 1}`} loading="lazy" />
-                  </div>
-                ))}
-              </div>
-              <a class="wechat-shot" href={wechatSet2} target="_blank" rel="noopener" aria-label="Ben's Joy, Anger, Sorrow and Happiness sticker set on the WeChat Sticker Gallery">
-                <Image src={wechatSet2Img} alt="Ben's Joy, Anger, Sorrow and Happiness sticker set live on the WeChat Sticker Gallery" loading="lazy" />
-              </a>
+            <div class="sticker-grid">
+              {set2.map((img, i) => (
+                <div class="sticker-tile">
+                  <Image src={img} alt={`Ben the Otter sticker, set two, expression ${i + 1}`} loading="lazy" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -150,9 +138,9 @@ const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emotico
   .section-heading h2 { margin: 0; font-size: 1.8rem; color: var(--color-text); }
   .overview-section, .process-section, .artwork-section, .shipped-section, .reflection-section { margin-top: 5rem; }
 
-  .drafts-row { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; }
+  .drafts-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2rem; }
   .draft-figure {
-    margin: 0; flex: 1 1 220px; max-width: 300px; text-align: center;
+    margin: 0; text-align: center;
     background: var(--color-bg-secondary, rgba(127,127,127,0.06));
     border: 1px solid var(--color-border, rgba(127,127,127,0.12));
     border-radius: 14px; padding: 1rem;
@@ -173,25 +161,11 @@ const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emotico
   }
   .wechat-btn:hover { background: var(--color-accent); color: var(--color-bg); }
 
-  /* sticker grid (left) + WeChat screenshot (right) */
-  .set-body { display: flex; gap: 1.75rem; align-items: flex-start; }
   .sticker-grid {
-    flex: 1 1 auto;
-    min-width: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.9rem;
+    gap: 1rem;
   }
-  .wechat-shot {
-    flex: 0 0 232px;
-    display: block;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 14px 34px rgba(0,0,0,0.16);
-    transition: transform .25s ease, box-shadow .25s ease;
-  }
-  .wechat-shot:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0,0,0,0.22); }
-  .wechat-shot img { width: 100%; height: auto; display: block; }
   .sticker-tile {
     aspect-ratio: 1 / 1;
     display: flex; align-items: center; justify-content: center;
@@ -227,8 +201,7 @@ const wechatSet2 = "https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emotico
   @media (max-width: 768px) {
     .section-heading { flex-direction: column; align-items: flex-start; }
     .section-number { margin-bottom: .5rem; }
-    .set-body { flex-direction: column; align-items: center; gap: 1.5rem; }
-    .sticker-grid { grid-template-columns: repeat(4, 1fr); gap: 0.6rem; width: 100%; }
-    .wechat-shot { flex: 0 0 auto; width: 100%; max-width: 300px; }
+    .sticker-grid { gap: 0.6rem; }
+    .drafts-row { grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
   }
 </style>
