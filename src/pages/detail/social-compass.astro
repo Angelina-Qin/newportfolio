@@ -1,0 +1,354 @@
+---
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+---
+
+<DetailPostLayout
+  title="Social Compass - Discreet Self-Regulation Support on Smart Glasses"
+  description="Social Compass is a smart-glasses prototype that notices stressful moments in conversation and offers short, non-directive prompts. People's Choice Student Challenge Award, UbiComp/ISWC 2025."
+  keywords="ux design, AR, smart glasses, XREAL, AI, machine learning, ImageBind, affective computing, case study, social compass"
+>
+  <div class="post">
+    <main class="post-wrapper">
+      <DetailHeader tag="AR PROTOTYPE & AI" description="2025 · Two-person research project · People's Choice Student Challenge Award, UbiComp/ISWC 2025">
+        <h1 class="font-type">Social Compass</h1>
+        <p class="project-subtitle">Discreet self-regulation support on smart glasses</p>
+      </DetailHeader>
+
+      <section class="sc-content">
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/EuQw5mr0eEk"
+            title="SocialCompass demo video"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="detail-cards">
+          <div class="detail-card">
+            <h4>My Role</h4>
+            <p>Concept, model training, research design</p>
+            <p class="detail-sub">Trained the machine-learning model, did most of the research design, and co-designed what the glasses show and say.</p>
+          </div>
+          <div class="detail-card">
+            <h4>Team</h4>
+            <p>Moshi Qin, Devbrat Anuragi</p>
+            <p class="detail-sub">Equal contribution. Devbrat Anuragi built the Unity app for the XREAL glasses.</p>
+          </div>
+          <div class="detail-card">
+            <h4>Methods & Tools</h4>
+            <p>Python, ImageBind, public sensor datasets</p>
+            <p class="detail-sub">ExtraSensory, WESAD, GLOBEM · Unity · XREAL smart glasses</p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <h2>The Problem</h2>
+          </div>
+          <p class="intro-paragraph">Conversations can raise our stress levels quickly, and in those moments people often say things they later regret. Most emotion-recognition research aims to classify emotions accurately. It often relies on intrusive sensors or lab settings, and it rarely turns detection into support people can use in the moment.</p>
+          <p>Social Compass asks a different question. Instead of naming the emotion, can we notice the moments when someone might want support, and offer it without taking over?</p>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <h2>Designing the Intervention</h2>
+          </div>
+          <p>The question we cared about most was how to support people without being intrusive or directive. That shaped what the glasses do:</p>
+          <div class="card-grid">
+            <div class="info-card">
+              <h4>Discreet</h4>
+              <p>Cues appear on smart glasses, so nobody has to look down at a phone mid-conversation. Small icons fade into the edge of view, alongside brief prompts.</p>
+            </div>
+            <div class="info-card">
+              <h4>Suggestive, not directive</h4>
+              <p>Prompts suggest rather than instruct, such as "Take a deep breath and pause for a moment" or "You might find it helpful to slow down". We wrote the templates in advance with help from a large language model and kept them supportive and neutral.</p>
+            </div>
+            <div class="info-card">
+              <h4>Well-timed</h4>
+              <p>The system waits for a natural pause in speech, detected from audio energy, before it shows a prompt.</p>
+            </div>
+            <div class="info-card">
+              <h4>Not too often</h4>
+              <p>Detection thresholds target 2–5 prompts per hour of conversation: enough to help, not so many that they become noise.</p>
+            </div>
+            <div class="info-card">
+              <h4>The person stays in control</h4>
+              <p>Raw sensor data is meant to stay on the user's own device, and the user decides when the system is switched on.</p>
+            </div>
+          </div>
+          <p class="note">My part of the interface: together with Devbrat, I worked out what appears in the glasses view and what the prompts say. Devbrat then built it in Unity.</p>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <h2>How It Works</h2>
+          </div>
+          <p>Social Compass combines two models. Motion and audio data from a phone or the glasses are turned into a single embedding with ImageBind, a multimodal foundation model.</p>
+          <ol class="steps">
+            <li>A <strong>social-context classifier</strong>, which I trained on the public ExtraSensory dataset, estimates whether the person is in a conversation.</li>
+            <li>An <strong>arousal estimate</strong> compares the same embedding with text descriptions such as "a person feeling stressed and agitated" and "a person feeling calm and relaxed". This needs no arousal-labelled training data.</li>
+            <li>When both are high, the system treats it as a high-arousal social moment and shows a prompt at the next natural pause.</li>
+          </ol>
+          <figure class="figure">
+            <img src="/newportfolio/assets/projects/social-compass/architecture.png" alt="Architecture diagram: offline preparation, a social context classifier and arousal target generation feed live detection of high-arousal social events, which triggers an unobtrusive prompt" loading="lazy" />
+            <figcaption>Architecture from our UbiComp Companion '25 paper: offline preparation, the two models, and live detection.</figcaption>
+          </figure>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <h2>Outcome</h2>
+          </div>
+          <ul class="dash-list">
+            <li>Presented at UbiComp/ISWC 2025 in Espoo, where Social Compass won the <strong>People's Choice Student Challenge Award</strong>.</li>
+            <li>Published in UbiComp Companion '25.</li>
+            <li>Social Compass is a proof of concept. Validating the detection and testing the prompts with users are the next steps.</li>
+          </ul>
+          <div class="link-row">
+            <a href="https://dl.acm.org/doi/10.1145/3714394.3750591" target="_blank" rel="noopener" class="link-button">Read the paper</a>
+            <a href="https://github.com/DevbratAnuragi/SocialCompassRelease" target="_blank" rel="noopener" class="link-button">View the code</a>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <h2>Reflection</h2>
+          </div>
+          <p>Working with a foundation model taught me to design around its limits. ImageBind gives confident answers about arousal even though it was never trained on it, so much of our paper is about what those outputs can and cannot be used to claim. In the design, that meant keeping the person in charge: the glasses suggest, and the person decides.</p>
+          <p>Next, I would test the timing and wording of the prompts with users across different social situations, because a badly timed prompt could add stress instead of reducing it.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</DetailPostLayout>
+
+<style>
+.sc-content {
+  --text-color-primary: #111827;
+  --text-color-secondary: #374151;
+  --accent-color: #2563eb;
+  --surface-bg: #ffffff;
+  --surface-border: rgba(17, 24, 39, 0.1);
+  --radius-card: 12px;
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+}
+html.theme-dark .sc-content,
+:root.theme-dark .sc-content {
+  --text-color-primary: #f9fafb;
+  --text-color-secondary: #d1d5db;
+  --accent-color: #60a5fa;
+  --surface-bg: rgba(255, 255, 255, 0.05);
+  --surface-border: rgba(255, 255, 255, 0.15);
+}
+
+.sc-content p,
+.sc-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-color-secondary);
+}
+.sc-content .intro-paragraph {
+  font-size: 1.15rem;
+  color: var(--text-color-primary);
+}
+.sc-content p {
+  margin-bottom: var(--space-m);
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: var(--space-l);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--surface-border);
+  background: #000;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.detail-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+.detail-card {
+  padding: var(--space-m);
+  background-color: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+}
+.detail-card h4 {
+  margin: 0 0 var(--space-xs);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+.sc-content .detail-card p {
+  margin: 0 0 var(--space-xs);
+  color: var(--text-color-primary);
+  font-weight: 600;
+}
+.sc-content .detail-card .detail-sub {
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+}
+
+.content-section {
+  margin-top: var(--space-xxl);
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-l);
+  padding-bottom: var(--space-s);
+  border-bottom: 1px solid var(--surface-border);
+}
+.section-number {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-right: var(--space-s);
+}
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color-primary);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+.info-card {
+  padding: var(--space-m);
+  background-color: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+}
+.info-card h4 {
+  margin: 0 0 var(--space-s);
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+.sc-content .info-card p {
+  margin: 0;
+}
+.sc-content .note {
+  margin-top: var(--space-l);
+  padding: var(--space-m);
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--surface-bg);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  color: var(--text-color-primary);
+}
+
+.steps {
+  margin: var(--space-m) 0;
+  padding-left: 1.5em;
+}
+.steps li {
+  margin-bottom: var(--space-s);
+}
+
+.figure {
+  margin: var(--space-l) 0;
+  padding: var(--space-s);
+  background-color: #ffffff;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+}
+.figure img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.figure figcaption {
+  font-size: 0.9rem;
+  color: #374151;
+  text-align: center;
+  margin-top: var(--space-s);
+}
+
+.dash-list {
+  list-style: none;
+  padding-left: 0;
+}
+.dash-list li {
+  padding-left: var(--space-m);
+  position: relative;
+  margin-bottom: var(--space-s);
+}
+.dash-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 12px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-top: var(--space-m);
+}
+.link-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000 !important;
+  border: 2px solid #333333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+:root.theme-dark .link-button {
+  background-color: #1a1a1a;
+  color: #ffffff !important;
+  border-color: #ffffff;
+}
+.link-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .section-heading h2 { font-size: 2rem; }
+  .content-section { margin-top: var(--space-xl); }
+}
+</style>

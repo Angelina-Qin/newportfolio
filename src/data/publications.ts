@@ -2,7 +2,7 @@
 export const publications = [
   {
     type: "Conference",
-    status: "Accepted, to appear",
+    featured: true,
     title:
       "Labeling Negative Comments on Online News May Enhance Reader Experience: A Group-Based Experiment",
     authors: "Qin, M. (2nd author)",
@@ -10,23 +10,24 @@ export const publications = [
     year: 2026,
     contribution:
       "My role: contributed to the literature review, data analysis, and writing.",
-    // no link/pdf/abstract yet, not published; awaiting go-ahead to share abstract
+    // published at NordiCHI 2026; add the DOI link here when available
     citedBy: 0
   },
   {
     type: "Demo",
-    status: "Accepted, to appear",
+    featured: true,
     title: "Real-Time Multimodal Arousal Detection and its Haptic Regulation",
     authors: "Anuragi, D.; Qin, M.; Surakka, V.; Raisamo, R.",
     venue: "NordiCHI 2026: Nordic Conference on Human-Computer Interaction",
     year: 2026,
     contribution:
       "My role: I originated the concept and led the design of this demo; co-author D. Anuragi implemented the prototype.",
-    // no link/pdf/abstract yet, not published; awaiting go-ahead to share abstract
+    // published at NordiCHI 2026; add the DOI link here when available
     citedBy: 0
   },
   {
     type: "Conference",
+    featured: true,
     openAccess: false,
     title:
       "A Social Compass: Guiding Self-Regulation in High-Arousal Moments with Ubiquitous Sensing",

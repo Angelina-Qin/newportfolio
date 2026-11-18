@@ -7,23 +7,24 @@ import { publications } from '../data/publications';
 const baseUrl = import.meta.env.BASE_URL;
 
 const cvLink = socialLinks.find((s:any) => s.name === 'Resume')?.url || '#';
-const contactEmail = 'moshi.qin@tuni.fi';
+const contactEmail = 'beini0422@gmail.com';
 // Only these icons show in the hero; CV has its own button, email has a contact line.
 const heroSocials = socialLinks.filter((s:any) => s.name === 'Linkedin' || s.name === 'Google Scholar');
 
-// Selected research shown on the landing page (most recent / award-winning)
+// Selected research shown on the landing page (marked `featured` in publications.ts)
 const highlights = publications
-  .filter((p:any) => p.award || p.status)
+  .filter((p:any) => p.featured)
   .slice(0, 3);
 
 const base = '/newportfolio';
 const projects = [
-  { title: 'Ben the Otter', tag: 'Illustration & Character Design', cover: `${base}/assets/cover/cover-stickers.png`, href: `${base}/detail/stickers` },
-  { title: 'Natsu', tag: 'Menu Design', cover: `${base}/assets/cover/cover-natsu.png`, href: `${base}/detail/natsu` },
   { title: 'Agora', tag: 'UX/UI Design', cover: `${base}/assets/cover/cover-agora.jpg`, href: `${base}/detail/agora` },
-  { title: 'Manse', tag: 'UX/UI Design', cover: `${base}/assets/cover/cover-manse.png`, href: `${base}/detail/manse` },
   { title: 'Ecjoy', tag: 'UI/UX Design', cover: `${base}/assets/cover/cover-ecjoy.png`, href: `${base}/detail/ecjoy` },
+  { title: 'Social Compass', tag: 'AR Prototype & AI', cover: `${base}/assets/cover/cover-socialcompass.jpg`, href: `${base}/detail/social-compass` },
+  { title: 'Manse', tag: 'UX/UI Design', cover: `${base}/assets/cover/cover-manse.png`, href: `${base}/detail/manse` },
   { title: 'Buckethead', tag: 'Game Design', cover: `${base}/assets/cover/cover-buckethead.png`, href: `${base}/detail/buckethead` },
+  { title: 'Natsu', tag: 'Menu Design', cover: `${base}/assets/cover/cover-natsu.png`, href: `${base}/detail/natsu` },
+  { title: 'Ben the Otter', tag: 'Illustration & Character Design', cover: `${base}/assets/cover/cover-stickers.png`, href: `${base}/detail/stickers` },
 ];
 ---
 
@@ -36,7 +37,7 @@ keywords = {homeTdk.keywords  || ''}
 	<section class="intro">
 		<div class="container intro-grid home-narrow">
 			<div class="intro-text">
-				<p class="intro-eyebrow">PhD Researcher · <span class="role-full">Human&#8209;Computer Interaction</span><span class="role-short">HCI</span></p>
+				<p class="intro-eyebrow">UX Designer · <span class="role-full">HCI Researcher</span><span class="role-short">HCI Researcher</span></p>
 				<h1 class="intro-name">Moshi Qin</h1>
 				<p class="intro-affil"><span class="affil-full">TAUCHI Research Center, Tampere University · Finland</span><span class="affil-short">Tampere University · Finland</span></p>
 
@@ -77,6 +78,7 @@ keywords = {homeTdk.keywords  || ''}
 			</div>
 			<div class="about-text">
 				<p>I'm a researcher and designer in human-computer interaction who cares about making technology intuitive and genuinely human. My background is in Human&#8209;Technology Interaction, with a strong foundation in user research, and I like working across the whole picture, from game design to cognitive load analysis, to understand how technology can better serve the people using it.</p>
+				<p>I'm now looking for a full-time UX or product design role, based in Tampere. I enjoy working closely with developers, and I use AI tools such as Claude every day for code and data analysis. Much of this site was built with Claude.</p>
 				<p>Outside of research, you'll probably find me baking something sweet, sipping a good cup of coffee, solving puzzles, or trying to escape a themed room (hopefully successfully). I also love just sitting under the sun, soaking in the moment.</p>
 			</div>
 		</div>

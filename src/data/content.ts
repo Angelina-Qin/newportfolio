@@ -20,7 +20,7 @@ export const nav: Nav = {
 };
 
 // Footer
-export const footerText = `© ${new Date().getFullYear()} Moshi. All Rights Reserved.`
+export const footerText = `© ${new Date().getFullYear()} Moshi Qin. Built with Claude.`
 
 //SEO TDK
 interface SeoTdk {
@@ -30,9 +30,9 @@ interface SeoTdk {
 }
 // SEO TDK 首页
 export const homeTdk: SeoTdk = {
-    title: 'Moshi Qin | PhD Researcher, Human-Computer Interaction',
-    description: 'Moshi Qin is a human-computer interaction researcher and designer studying how people interact through emojis, gaze, and gesture. Explore research, projects, and design work.',
-    keywords: 'Moshi Qin, HCI researcher, human-computer interaction, UX designer, Tampere University, emoji research'
+    title: 'Moshi Qin | UX Designer & HCI Researcher',
+    description: 'Moshi Qin is a UX designer and human-computer interaction researcher based in Tampere, Finland. Explore UX case studies, research, and publications.',
+    keywords: 'Moshi Qin, UX designer, UX designer Tampere, HCI researcher, human-computer interaction, Figma, Tampere University'
 }
 // SEO TDK research
 export const researchTdk: SeoTdk = {
@@ -73,7 +73,7 @@ export const socialLinks = [
     },
     {
         name: 'Email',
-        url: 'mailto:moshi.qin@tuni.fi',
+        url: 'mailto:beini0422@gmail.com',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g data-name="7-Email-Arrow up"><path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23V17h2V7a3 3 0 0 0-3-3zM16 14.77 3.72 6h24.56z"/><path d="m24.29 18.29-4 4 1.41 1.41 2.3-2.29V29h2v-7.59l2.29 2.29 1.41-1.41-4-4a1 1 0 0 0-1.41 0z"/></g></svg>`
     },
     // RSS 链接不用修改，不想用删除或者注释即可
